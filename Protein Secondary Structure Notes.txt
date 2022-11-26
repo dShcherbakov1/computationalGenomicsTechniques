@@ -1,0 +1,15 @@
+Most common types of protein secondary structures are alpha helicces and beta sheets. Other helices also exist (3_10 helix, pi helix) but are rare. There are also random coils.
+
+
+DSSP Classification
+
+DSSP, the directory of protein secondary structure, is commonly used to describe protein secondary structure with letter codes. There are eight types of secondary structure in the DSSP:
+
+G --- 3 turn helix 3_10 helix. Minimum length, 3 residues
+H --- 4 turn helix, alpha helix, minimum length 4 residues.
+I --- 5 turn helix, pi helix, minimum length 5 residues.
+T --- Hydrogen bonded turn, 3, 4, or 5 turn
+E --- extended strand in parallel and/or anti-parallel B-sheet conformation. minimum length, 2 residues
+B --- Residue in isolated B-bridge
+S --- Bend (the only non-hydrogen bond assignment)
+C --- Coil (residues which are not in any of the above conformations)

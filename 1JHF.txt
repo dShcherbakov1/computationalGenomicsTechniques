@@ -1,0 +1,430 @@
+REM  --------------------------------------------------------------------  1JHF
+REM                                                                        1JHF
+REM  STRIDE: Knowledge-based secondary structure assignment                1JHF
+REM  Please cite: D.Frishman & P.Argos, Proteins XX, XXX-XXX, 1995         1JHF
+REM                                                                        1JHF
+REM  Residue accessible surface area calculation                           1JHF
+REM  Please cite: F.Eisenhaber & P.Argos, J.Comp.Chem. 14, 1272-1280, 1993 1JHF
+REM               F.Eisenhaber et al., J.Comp.Chem., 1994, submitted       1JHF
+REM                                                                        1JHF
+REM  ------------------------ General information -----------------------  1JHF
+REM                                                                        1JHF
+HDR  HYDROLASE                               27-JUN-01   1JHF              1JHF
+CMP  MOL_ID: 1;                                                            1JHF
+CMP   MOLECULE: LEXA REPRESSOR;                                            1JHF
+CMP   CHAIN: A, B;                                                         1JHF
+CMP   EC: 3.4.21.88;                                                       1JHF
+CMP   ENGINEERED: YES;                                                     1JHF
+CMP   MUTATION: YES                                                        1JHF
+SRC  MOL_ID: 1;                                                            1JHF
+SRC   ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               1JHF
+SRC   ORGANISM_TAXID: 562;                                                 1JHF
+SRC   GENE: LEXA;                                                          1JHF
+SRC   EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 1JHF
+SRC   EXPRESSION_SYSTEM_TAXID: 562                                         1JHF
+AUT  Y.LUO,R.A.PFUETZNER,S.MOSIMANN,J.W.LITTLE,N.C.J.STRYNADKA             1JHF
+REM                                                                        1JHF
+REM  -------------------- Secondary structure summary -------------------  1JHF
+REM                                                                        1JHF
+CHN  /home/proj/stride/tmp/tmpg8agQtpdb A                                  1JHF
+REM                                                                        1JHF
+REM                .         .         .         .         .               1JHF
+SEQ  1    KALTARQQEVFDLIRDHISQTGMPPTRAEIAQRLGFRSPNAAEEHLKALA   50          1JHF
+STR           HHHHHHHHHHHHHHHHH     HHHHHHHH    HHHHHHHHHHHH               1JHF
+REM                                                                        1JHF
+REM                .         .         .         .         .               1JHF
+SEQ  51   RKGVIEIVSGASRGIRLLQEEEEGLPLVGRVAADEPLLAQQHIEGHYQVD  100          1JHF
+STR       HH  EEE   TTTTEEETTT    EEEE   TTTTTTTTGGGEEEEETB                1JHF
+REM                                                                        1JHF
+REM                .         .         .         .         .               1JHF
+SEQ  101  PSLFKPNADFLLRVSGMSMKDIGIMDGDLLAVHKTQDVRNGQVVVARIDD  150          1JHF
+STR       GGGTTTT  EEEEE  TTTGGG  TTTEEEEEEE    TTTEEEEEEETT               1JHF
+REM                                                                        1JHF
+REM                .         .         .         .                         1JHF
+SEQ  151  EVTVKRLKKQGNKVELLPENSEFKPIVVDLRQQSFTIEGLAVGVIRN     197          1JHF
+STR       EEEEEEEEEETTEEEEE  TTTT  EEEETTTT EEEEEEEEEEEE                   1JHF
+REM                                                                        1JHF
+CHN  /home/proj/stride/tmp/tmpg8agQtpdb B                                  1JHF
+REM                                                                        1JHF
+REM                .         .         .         .         .               1JHF
+SEQ  1    GLPLVIEGHYQVDPSLFKPNADFLLRVSGMSMKDIGIMDGDLLAVHKTQD   50          1JHF
+STR        EEETTTEEETB GGGTTTT  EEEEE  TTTGGG  TTTEEEEEEE                  1JHF
+REM                                                                        1JHF
+REM                .         .         .         .         .               1JHF
+SEQ  51   VRNGQVVVARIDDEVTVKRLKKQGNKVELLPENSEFKPIVVDLRQQSFTI  100          1JHF
+STR        TTTEEEEEEETTEEEEEEEEEETTEEEEE  TTTT  EEEETTTT EEE               1JHF
+REM                                                                        1JHF
+REM                .                                                       1JHF
+SEQ  101  EGLAVGVIRNG                                         111          1JHF
+STR       EEEEEEEEE                                                        1JHF
+REM                                                                        1JHF
+REM                                                                        1JHF
+REM                                                                        1JHF
+LOC  AlphaHelix   ALA     6 A      THR     22 A                            1JHF
+LOC  AlphaHelix   ARG    28 A      LEU     35 A                            1JHF
+LOC  AlphaHelix   PRO    40 A      LYS     53 A                            1JHF
+LOC  310Helix     GLN    91 A      HIS     93 A                            1JHF
+LOC  310Helix     PRO   102 A      LEU    104 A                            1JHF
+LOC  310Helix     LYS   121 A      ILE    123 A                            1JHF
+LOC  310Helix     PRO   102 B      LEU    104 B                            1JHF
+LOC  310Helix     LYS   121 B      ILE    123 B                            1JHF
+LOC  Strand       ILE    56 A      ILE     58 A                            1JHF
+LOC  Strand       ILE    66 A      LEU     68 A                            1JHF
+LOC  Strand       LEU    76 A      VAL     79 A                            1JHF
+LOC  Strand       ILE    94 A      TYR     98 A                            1JHF
+LOC  Strand       PHE   111 A      VAL    115 A                            1JHF
+LOC  Strand       ASP   129 A      LYS    135 A                            1JHF
+LOC  Strand       GLN   143 A      ILE    149 A                            1JHF
+LOC  Strand       GLU   152 A      GLN    161 A                            1JHF
+LOC  Strand       LYS   164 A      LEU    168 A                            1JHF
+LOC  Strand       ILE   177 A      ASP    180 A                            1JHF
+LOC  Strand       PHE   186 A      ARG    197 A                            1JHF
+LOC  Strand       LEU    76 B      LEU     78 B                            1JHF
+LOC  Strand       GLY    96 B      TYR     98 B                            1JHF
+LOC  Strand       PHE   111 B      VAL    115 B                            1JHF
+LOC  Strand       ASP   129 B      LYS    135 B                            1JHF
+LOC  Strand       GLN   143 B      ILE    149 B                            1JHF
+LOC  Strand       GLU   152 B      GLN    161 B                            1JHF
+LOC  Strand       LYS   164 B      LEU    168 B                            1JHF
+LOC  Strand       ILE   177 B      ASP    180 B                            1JHF
+LOC  Strand       PHE   186 B      ARG    197 B                            1JHF
+LOC  TurnIV       ALA    62 A      GLY     65 A                            1JHF
+LOC  TurnIV       LEU    68 A      GLU     71 A                            1JHF
+LOC  TurnII       ALA    83 A      GLU     86 A                            1JHF
+LOC  TurnI        PRO    87 A      ALA     90 A                            1JHF
+LOC  TurnIV       PHE   105 A      ASN    108 A                            1JHF
+LOC  TurnI        MET   118 A      LYS    121 A                            1JHF
+LOC  TurnII       MET   126 A      ASP    129 A                            1JHF
+LOC  TurnII       ARG   140 A      GLN    143 A                            1JHF
+LOC  TurnIV       ARG   148 A      ASP    151 A                            1JHF
+LOC  TurnI'       ILE   149 A      GLU    152 A                            1JHF
+LOC  TurnII'      GLN   161 A      LYS    164 A                            1JHF
+LOC  TurnI        ASN   171 A      PHE    174 A                            1JHF
+LOC  TurnI        ASP   180 A      GLN    183 A                            1JHF
+LOC  TurnIV       LEU   181 A      GLN    184 A                            1JHF
+LOC  GammaInv     TYR    98 A      VAL    100 A                            1JHF
+LOC  TurnIV       PRO    77 B      ILE     94 B                            1JHF
+LOC  TurnIV       LEU    78 B      GLU     95 B                            1JHF
+LOC  TurnIV       PHE   105 B      ASN    108 B                            1JHF
+LOC  TurnI        MET   118 B      LYS    121 B                            1JHF
+LOC  TurnII       MET   126 B      ASP    129 B                            1JHF
+LOC  TurnII       ARG   140 B      GLN    143 B                            1JHF
+LOC  TurnIV       ARG   148 B      ASP    151 B                            1JHF
+LOC  TurnI'       ILE   149 B      GLU    152 B                            1JHF
+LOC  TurnII'      GLN   161 B      LYS    164 B                            1JHF
+LOC  TurnI        ASN   171 B      PHE    174 B                            1JHF
+LOC  TurnI        ASP   180 B      GLN    183 B                            1JHF
+LOC  TurnIV       LEU   181 B      GLN    184 B                            1JHF
+LOC  GammaInv     TYR    98 B      VAL    100 B                            1JHF
+REM                                                                        1JHF
+REM  --------------- Detailed secondary structure assignment-------------  1JHF
+REM                                                                        1JHF
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      1JHF
+ASG  LYS A    2    1    C          Coil    360.00    135.49     202.4      1JHF
+ASG  ALA A    3    2    C          Coil   -138.62    135.55      76.3      1JHF
+ASG  LEU A    4    3    C          Coil    -84.14    139.76      45.0      1JHF
+ASG  THR A    5    4    C          Coil    -75.06    172.94      67.3      1JHF
+ASG  ALA A    6    5    H    AlphaHelix    -59.50    -46.07      79.5      1JHF
+ASG  ARG A    7    6    H    AlphaHelix    -67.59    -39.79     126.4      1JHF
+ASG  GLN A    8    7    H    AlphaHelix    -63.54    -36.57      22.4      1JHF
+ASG  GLN A    9    8    H    AlphaHelix    -65.06    -41.39      72.2      1JHF
+ASG  GLU A   10    9    H    AlphaHelix    -64.59    -38.49      98.0      1JHF
+ASG  VAL A   11   10    H    AlphaHelix    -68.46    -43.80       0.0      1JHF
+ASG  PHE A   12   11    H    AlphaHelix    -62.72    -40.39      23.1      1JHF
+ASG  ASP A   13   12    H    AlphaHelix    -63.67    -42.59      40.7      1JHF
+ASG  LEU A   14   13    H    AlphaHelix    -62.57    -41.23      14.7      1JHF
+ASG  ILE A   15   14    H    AlphaHelix    -61.31    -49.16       0.0      1JHF
+ASG  ARG A   16   15    H    AlphaHelix    -61.99    -42.53      57.4      1JHF
+ASG  ASP A   17   16    H    AlphaHelix    -64.25    -38.59      23.3      1JHF
+ASG  HIS A   18   17    H    AlphaHelix    -62.89    -42.75      45.2      1JHF
+ASG  ILE A   19   18    H    AlphaHelix    -67.50    -40.78      41.9      1JHF
+ASG  SER A   20   19    H    AlphaHelix    -64.11    -30.27      60.9      1JHF
+ASG  GLN A   21   20    H    AlphaHelix    -92.70    -31.70     106.7      1JHF
+ASG  THR A   22   21    H    AlphaHelix   -124.48    -14.63      84.6      1JHF
+ASG  GLY A   23   22    C          Coil     77.55      6.22      58.2      1JHF
+ASG  MET A   24   23    C          Coil   -129.12    142.61      84.8      1JHF
+ASG  PRO A   25   24    C          Coil    -75.66    164.88      14.8      1JHF
+ASG  PRO A   26   25    C          Coil    -85.02    158.43       0.3      1JHF
+ASG  THR A   27   26    C          Coil    -81.88    168.24      34.8      1JHF
+ASG  ARG A   28   27    H    AlphaHelix    -64.28    -33.88      59.4      1JHF
+ASG  ALA A   29   28    H    AlphaHelix    -68.15    -41.57      56.6      1JHF
+ASG  GLU A   30   29    H    AlphaHelix    -63.28    -39.33      69.2      1JHF
+ASG  ILE A   31   30    H    AlphaHelix    -64.29    -46.93       0.0      1JHF
+ASG  ALA A   32   31    H    AlphaHelix    -64.59    -35.55       7.4      1JHF
+ASG  GLN A   33   32    H    AlphaHelix    -70.40    -47.06     155.8      1JHF
+ASG  ARG A   34   33    H    AlphaHelix    -67.35    -36.25     163.4      1JHF
+ASG  LEU A   35   34    H    AlphaHelix   -100.23      8.38      48.6      1JHF
+ASG  GLY A   36   35    C          Coil     60.82     33.97      64.2      1JHF
+ASG  PHE A   37   36    C          Coil    -75.17    156.42      23.2      1JHF
+ASG  ARG A   38   37    C          Coil    -63.11    -25.40     214.3      1JHF
+ASG  SER A   39   38    C          Coil   -175.73    166.98      38.9      1JHF
+ASG  PRO A   40   39    H    AlphaHelix    -55.79    -30.62      67.6      1JHF
+ASG  ASN A   41   40    H    AlphaHelix    -60.27    -39.43     124.8      1JHF
+ASG  ALA A   42   41    H    AlphaHelix    -63.19    -37.05      10.0      1JHF
+ASG  ALA A   43   42    H    AlphaHelix    -69.03    -37.66       0.0      1JHF
+ASG  GLU A   44   43    H    AlphaHelix    -60.69    -35.67      41.9      1JHF
+ASG  GLU A   45   44    H    AlphaHelix    -63.22    -44.04     110.8      1JHF
+ASG  HIS A   46   45    H    AlphaHelix    -67.13    -35.36      42.3      1JHF
+ASG  LEU A   47   46    H    AlphaHelix    -65.64    -37.18       0.0      1JHF
+ASG  LYS A   48   47    H    AlphaHelix    -62.95    -40.67     109.2      1JHF
+ASG  ALA A   49   48    H    AlphaHelix    -66.14    -37.31       5.2      1JHF
+ASG  LEU A   50   49    H    AlphaHelix    -68.14    -36.78       0.0      1JHF
+ASG  ALA A   51   50    H    AlphaHelix    -68.74    -41.90      33.0      1JHF
+ASG  ARG A   52   51    H    AlphaHelix    -61.00    -32.53     180.1      1JHF
+ASG  LYS A   53   52    H    AlphaHelix    -89.44      5.03      53.9      1JHF
+ASG  GLY A   54   53    C          Coil     74.16     13.14      23.4      1JHF
+ASG  VAL A   55   54    C          Coil    -88.61    -16.35      24.9      1JHF
+ASG  ILE A   56   55    E        Strand   -143.82    166.97       2.8      1JHF
+ASG  GLU A   57   56    E        Strand   -126.75    137.89      76.7      1JHF
+ASG  ILE A   58   57    E        Strand   -111.67    123.21      55.5      1JHF
+ASG  VAL A   59   58    C          Coil   -115.94    120.82      64.5      1JHF
+ASG  SER A   60   59    C          Coil    -67.03    142.11     133.8      1JHF
+ASG  GLY A   61   60    C          Coil    136.44   -134.29      64.7      1JHF
+ASG  ALA A   62   61    T          Turn    -48.93    159.32      91.4      1JHF
+ASG  SER A   63   62    T          Turn    -70.56    152.28      99.6      1JHF
+ASG  ARG A   64   63    T          Turn     68.06     42.70      79.5      1JHF
+ASG  GLY A   65   64    T          Turn    -92.70     61.63      11.5      1JHF
+ASG  ILE A   66   65    E        Strand   -122.20    137.16      12.9      1JHF
+ASG  ARG A   67   66    E        Strand   -132.82    140.50     151.7      1JHF
+ASG  LEU A   68   67    E        Strand    -84.09    146.32      24.4      1JHF
+ASG  LEU A   69   68    T          Turn   -123.81    163.03      68.4      1JHF
+ASG  GLN A   70   69    T          Turn     52.04     46.74     153.3      1JHF
+ASG  GLU A   71   70    T          Turn    -72.90    -32.01     136.9      1JHF
+ASG  GLU A   72   71    C          Coil    -65.48    127.27     190.0      1JHF
+ASG  GLU A   73   72    C          Coil   -125.88    149.06     133.3      1JHF
+ASG  GLU A   74   73    C          Coil    -85.69    141.64     165.9      1JHF
+ASG  GLY A   75   74    C          Coil     85.39   -155.40      19.5      1JHF
+ASG  LEU A   76   75    E        Strand   -138.02    133.67       1.8      1JHF
+ASG  PRO A   77   76    E        Strand    -79.74    149.39      27.5      1JHF
+ASG  LEU A   78   77    E        Strand   -106.47    123.78       2.8      1JHF
+ASG  VAL A   79   78    E        Strand    -97.73    127.46       0.0      1JHF
+ASG  GLY A   80   79    C          Coil    -98.53   -139.41       6.2      1JHF
+ASG  ARG A   81   80    C          Coil    -64.77    134.03     228.6      1JHF
+ASG  VAL A   82   81    C          Coil   -100.86    131.82      28.9      1JHF
+ASG  ALA A   83   82    T          Turn    -90.42    153.12      38.1      1JHF
+ASG  ALA A   84   83    T          Turn    -62.39    150.71      65.8      1JHF
+ASG  ASP A   85   84    T          Turn     59.45     24.78     129.8      1JHF
+ASG  GLU A   86   85    T          Turn   -132.71    143.71      35.8      1JHF
+ASG  PRO A   87   86    T          Turn    -69.02    157.97       9.1      1JHF
+ASG  LEU A   88   87    T          Turn    -54.01    -44.95       7.3      1JHF
+ASG  LEU A   89   88    T          Turn    -89.56     26.84      51.3      1JHF
+ASG  ALA A   90   89    T          Turn    -59.66    140.91       0.0      1JHF
+ASG  GLN A   91   90    G      310Helix    -54.07    -32.98      53.5      1JHF
+ASG  GLN A   92   91    G      310Helix    -68.15    -13.61     121.1      1JHF
+ASG  HIS A   93   92    G      310Helix    -91.98    -17.67       7.5      1JHF
+ASG  ILE A   94   93    E        Strand    -80.07    115.86      37.7      1JHF
+ASG  GLU A   95   94    E        Strand    -88.97    -25.55     112.4      1JHF
+ASG  GLY A   96   95    E        Strand    175.50   -175.43      24.5      1JHF
+ASG  HIS A   97   96    E        Strand   -127.14    125.53     107.6      1JHF
+ASG  TYR A   98   97    E        Strand   -100.85    134.89      45.9      1JHF
+ASG  GLN A   99   98    T          Turn    -85.60     85.68      93.7      1JHF
+ASG  VAL A  100   99    B        Bridge   -131.61    131.82       2.9      1JHF
+ASG  ASP A  101  100    C          Coil    -61.63    111.28      49.8      1JHF
+ASG  PRO A  102  101    G      310Helix    -61.17    -27.08      37.9      1JHF
+ASG  SER A  103  102    G      310Helix    -78.13      1.05      70.3      1JHF
+ASG  LEU A  104  103    G      310Helix    -70.75    -22.97      26.6      1JHF
+ASG  PHE A  105  104    T          Turn   -104.13    152.28       1.8      1JHF
+ASG  LYS A  106  105    T          Turn   -135.24    118.95     166.6      1JHF
+ASG  PRO A  107  106    T          Turn    -62.71    166.74      47.5      1JHF
+ASG  ASN A  108  107    T          Turn    -59.02    147.28      69.3      1JHF
+ASG  ALA A  109  108    C          Coil    -80.34    147.04       4.9      1JHF
+ASG  ASP A  110  109    C          Coil   -111.51    -26.69      75.5      1JHF
+ASG  PHE A  111  110    E        Strand   -165.90    167.79       3.8      1JHF
+ASG  LEU A  112  111    E        Strand   -111.21    145.67       0.0      1JHF
+ASG  LEU A  113  112    E        Strand   -130.79    125.86       8.2      1JHF
+ASG  ARG A  114  113    E        Strand    -69.78    128.98     103.7      1JHF
+ASG  VAL A  115  114    E        Strand    -84.85    137.71      10.8      1JHF
+ASG  SER A  116  115    C          Coil   -112.67    122.73     106.3      1JHF
+ASG  GLY A  117  116    C          Coil     87.45    170.52      27.8      1JHF
+ASG  MET A  118  117    T          Turn   -100.96     17.63      72.9      1JHF
+ASG  SER A  119  118    T          Turn    -56.04    -23.21       9.2      1JHF
+ASG  MET A  120  119    T          Turn   -118.06     25.69       3.3      1JHF
+ASG  LYS A  121  120    G      310Helix    -63.43    -26.37      64.2      1JHF
+ASG  ASP A  122  121    G      310Helix    -63.89    -23.58      86.0      1JHF
+ASG  ILE A  123  122    G      310Helix   -104.64     15.30      51.7      1JHF
+ASG  GLY A  124  123    C          Coil     85.69     15.28       0.0      1JHF
+ASG  ILE A  125  124    C          Coil   -103.19    107.84      11.1      1JHF
+ASG  MET A  126  125    T          Turn   -104.29    162.63      17.2      1JHF
+ASG  ASP A  127  126    T          Turn    -56.55    133.12      92.2      1JHF
+ASG  GLY A  128  127    T          Turn     90.70    -10.57      32.2      1JHF
+ASG  ASP A  129  128    E        Strand    -67.96    157.27       3.8      1JHF
+ASG  LEU A  130  129    E        Strand   -103.39    109.53       1.4      1JHF
+ASG  LEU A  131  130    E        Strand    -83.49    128.28       1.2      1JHF
+ASG  ALA A  132  131    E        Strand    -83.82    127.76       0.0      1JHF
+ASG  VAL A  133  132    E        Strand   -125.50    135.65       0.0      1JHF
+ASG  HIS A  134  133    E        Strand   -100.65    118.37      53.7      1JHF
+ASG  LYS A  135  134    E        Strand    -68.75    117.78     104.4      1JHF
+ASG  THR A  136  135    C          Coil   -170.13    161.27      35.0      1JHF
+ASG  GLN A  137  136    C          Coil   -114.81     -3.65     122.0      1JHF
+ASG  ASP A  138  137    C          Coil    -92.93     85.42     134.6      1JHF
+ASG  VAL A  139  138    C          Coil   -120.77    167.41      18.9      1JHF
+ASG  ARG A  140  139    T          Turn   -129.64    158.65     160.2      1JHF
+ASG  ASN A  141  140    T          Turn    -51.99    142.08      81.7      1JHF
+ASG  GLY A  142  141    T          Turn     87.46    -10.32      38.7      1JHF
+ASG  GLN A  143  142    E        Strand    -89.80    153.41      61.1      1JHF
+ASG  VAL A  144  143    E        Strand    -85.25    118.81      21.9      1JHF
+ASG  VAL A  145  144    E        Strand   -122.50    166.42       0.7      1JHF
+ASG  VAL A  146  145    E        Strand   -107.54    120.69       0.0      1JHF
+ASG  ALA A  147  146    E        Strand   -132.23    162.82       0.6      1JHF
+ASG  ARG A  148  147    E        Strand   -126.08    123.26      15.8      1JHF
+ASG  ILE A  149  148    E        Strand   -113.22    112.13      18.8      1JHF
+ASG  ASP A  150  149    T          Turn     47.24     49.49      82.0      1JHF
+ASG  ASP A  151  150    T          Turn     75.10    -23.88      46.6      1JHF
+ASG  GLU A  152  151    E        Strand    -68.87    130.10     156.3      1JHF
+ASG  VAL A  153  152    E        Strand    -94.53    140.48      43.1      1JHF
+ASG  THR A  154  153    E        Strand   -147.62    157.87      25.8      1JHF
+ASG  VAL A  155  154    E        Strand   -118.19    112.69      13.0      1JHF
+ASG  LYS A  156  155    E        Strand   -149.42    174.26      16.2      1JHF
+ASG  ARG A  157  156    E        Strand    -92.88    134.03      65.3      1JHF
+ASG  LEU A  158  157    E        Strand    -78.73    133.02       8.5      1JHF
+ASG  LYS A  159  158    E        Strand   -144.62     92.49      90.2      1JHF
+ASG  LYS A  160  159    E        Strand    -66.86    138.01     115.7      1JHF
+ASG  GLN A  161  160    E        Strand   -137.14     63.71      91.9      1JHF
+ASG  GLY A  162  161    T          Turn     72.28   -119.40      72.2      1JHF
+ASG  ASN A  163  162    T          Turn    -85.51      3.88     105.0      1JHF
+ASG  LYS A  164  163    E        Strand   -124.74    164.43      87.4      1JHF
+ASG  VAL A  165  164    E        Strand   -135.86    133.10       8.8      1JHF
+ASG  GLU A  166  165    E        Strand   -110.82    131.79      48.5      1JHF
+ASG  LEU A  167  166    E        Strand   -111.45    110.82       0.4      1JHF
+ASG  LEU A  168  167    E        Strand    -88.52    138.73      47.5      1JHF
+ASG  PRO A  169  168    C          Coil    -91.61    173.15      23.1      1JHF
+ASG  GLU A  170  169    C          Coil   -132.79     67.00      51.8      1JHF
+ASG  ASN A  171  170    T          Turn   -168.23    124.48      14.1      1JHF
+ASG  SER A  172  171    T          Turn    -60.33    -21.67     121.9      1JHF
+ASG  GLU A  173  172    T          Turn    -76.66    -17.83     175.3      1JHF
+ASG  PHE A  174  173    T          Turn    -99.83    164.17      93.5      1JHF
+ASG  LYS A  175  174    C          Coil   -131.36    161.78     172.7      1JHF
+ASG  PRO A  176  175    C          Coil    -63.07    148.74      54.5      1JHF
+ASG  ILE A  177  176    E        Strand    -91.83    123.78      60.4      1JHF
+ASG  VAL A  178  177    E        Strand   -102.96    121.74      72.8      1JHF
+ASG  VAL A  179  178    E        Strand   -109.33    128.20       0.0      1JHF
+ASG  ASP A  180  179    E        Strand   -102.06    105.62      19.8      1JHF
+ASG  LEU A  181  180    T          Turn    -61.27    -15.15      77.4      1JHF
+ASG  ARG A  182  181    T          Turn    -82.89     -7.69     166.9      1JHF
+ASG  GLN A  183  182    T          Turn   -146.14      3.98     152.8      1JHF
+ASG  GLN A  184  183    T          Turn   -133.01    147.22      59.3      1JHF
+ASG  SER A  185  184    C          Coil    -82.91    138.89      57.3      1JHF
+ASG  PHE A  186  185    E        Strand   -146.07    134.82      45.7      1JHF
+ASG  THR A  187  186    E        Strand   -147.06    149.06      67.4      1JHF
+ASG  ILE A  188  187    E        Strand    -95.97    127.40      21.3      1JHF
+ASG  GLU A  189  188    E        Strand    -96.22    -33.33      23.3      1JHF
+ASG  GLY A  190  189    E        Strand    175.77   -176.66       0.0      1JHF
+ASG  LEU A  191  190    E        Strand   -109.50    133.53      26.5      1JHF
+ASG  ALA A  192  191    E        Strand    -77.52    126.05      23.5      1JHF
+ASG  VAL A  193  192    E        Strand   -121.04     -0.65      18.0      1JHF
+ASG  GLY A  194  193    E        Strand    175.14   -177.43      10.0      1JHF
+ASG  VAL A  195  194    E        Strand   -146.53    143.74       3.4      1JHF
+ASG  ILE A  196  195    E        Strand   -127.50    120.61       0.6      1JHF
+ASG  ARG A  197  196    E        Strand   -113.27    122.22      42.7      1JHF
+ASG  ASN A  198  197    C          Coil   -134.79    360.00      81.9      1JHF
+ASG  GLY B   75    1    C          Coil    360.00    108.98      41.8      1JHF
+ASG  LEU B   76    2    E        Strand   -124.60    129.62       2.0      1JHF
+ASG  PRO B   77    3    E        Strand    -84.91    147.20      33.3      1JHF
+ASG  LEU B   78    4    E        Strand    -99.97    124.18      11.2      1JHF
+ASG  VAL B   79    5    T          Turn   -121.99    360.00      77.8      1JHF
+ASG  ILE B   94    6    T          Turn    360.00    127.50     160.4      1JHF
+ASG  GLU B   95    7    T          Turn   -111.01    -20.40     152.9      1JHF
+ASG  GLY B   96    8    E        Strand   -169.89    178.85      23.4      1JHF
+ASG  HIS B   97    9    E        Strand   -144.95    137.69     106.1      1JHF
+ASG  TYR B   98   10    E        Strand   -126.76    136.18      44.7      1JHF
+ASG  GLN B   99   11    T          Turn    -85.94     80.18     103.6      1JHF
+ASG  VAL B  100   12    B        Bridge   -132.36    120.21       0.4      1JHF
+ASG  ASP B  101   13    C          Coil    -50.79    115.60      52.7      1JHF
+ASG  PRO B  102   14    G      310Helix    -61.63    -24.57      35.5      1JHF
+ASG  SER B  103   15    G      310Helix    -81.71      5.75      56.9      1JHF
+ASG  LEU B  104   16    G      310Helix    -79.52    -12.78      25.2      1JHF
+ASG  PHE B  105   17    T          Turn   -109.88    147.04       0.0      1JHF
+ASG  LYS B  106   18    T          Turn   -136.60    116.59     161.6      1JHF
+ASG  PRO B  107   19    T          Turn    -62.65    168.63      52.4      1JHF
+ASG  ASN B  108   20    T          Turn    -66.02    146.33      73.1      1JHF
+ASG  ALA B  109   21    C          Coil    -80.18    140.46       4.5      1JHF
+ASG  ASP B  110   22    C          Coil   -105.16    -32.50      77.8      1JHF
+ASG  PHE B  111   23    E        Strand   -157.37    172.38      33.3      1JHF
+ASG  LEU B  112   24    E        Strand   -116.98    150.59       0.0      1JHF
+ASG  LEU B  113   25    E        Strand   -135.20    136.52      35.9      1JHF
+ASG  ARG B  114   26    E        Strand    -81.21    124.11     118.8      1JHF
+ASG  VAL B  115   27    E        Strand    -80.42    136.37      15.8      1JHF
+ASG  SER B  116   28    C          Coil   -118.48    129.43     107.5      1JHF
+ASG  GLY B  117   29    C          Coil     88.26    172.23      28.8      1JHF
+ASG  MET B  118   30    T          Turn   -109.94     21.80      65.5      1JHF
+ASG  SER B  119   31    T          Turn    -60.16    -22.33      12.0      1JHF
+ASG  MET B  120   32    T          Turn   -115.63     23.01       4.3      1JHF
+ASG  LYS B  121   33    G      310Helix    -60.30    -31.63      74.5      1JHF
+ASG  ASP B  122   34    G      310Helix    -62.99    -17.34      74.7      1JHF
+ASG  ILE B  123   35    G      310Helix   -112.56     19.52      46.5      1JHF
+ASG  GLY B  124   36    C          Coil     81.63     16.84       0.0      1JHF
+ASG  ILE B  125   37    C          Coil   -102.88    108.69       9.4      1JHF
+ASG  MET B  126   38    T          Turn   -109.94    160.17      20.0      1JHF
+ASG  ASP B  127   39    T          Turn    -54.30    132.16      91.5      1JHF
+ASG  GLY B  128   40    T          Turn     92.36    -11.56      32.7      1JHF
+ASG  ASP B  129   41    E        Strand    -71.09    159.41       4.0      1JHF
+ASG  LEU B  130   42    E        Strand   -106.80    119.12       1.2      1JHF
+ASG  LEU B  131   43    E        Strand    -92.69    126.38       1.0      1JHF
+ASG  ALA B  132   44    E        Strand    -86.20    128.26       0.0      1JHF
+ASG  VAL B  133   45    E        Strand   -124.84    135.18       0.0      1JHF
+ASG  HIS B  134   46    E        Strand    -99.76    118.98      48.9      1JHF
+ASG  LYS B  135   47    E        Strand    -69.87    120.83     133.2      1JHF
+ASG  THR B  136   48    C          Coil   -173.51    164.08      33.3      1JHF
+ASG  GLN B  137   49    C          Coil   -116.16     -3.96     144.4      1JHF
+ASG  ASP B  138   50    C          Coil    -95.39     99.67     142.3      1JHF
+ASG  VAL B  139   51    C          Coil   -135.00    172.36      34.6      1JHF
+ASG  ARG B  140   52    T          Turn   -139.15    166.70     169.4      1JHF
+ASG  ASN B  141   53    T          Turn    -55.84    135.22      73.4      1JHF
+ASG  GLY B  142   54    T          Turn    102.23    -23.07      35.0      1JHF
+ASG  GLN B  143   55    E        Strand    -83.15    153.02      43.6      1JHF
+ASG  VAL B  144   56    E        Strand    -88.59    121.24      20.6      1JHF
+ASG  VAL B  145   57    E        Strand   -122.14    165.10       0.6      1JHF
+ASG  VAL B  146   58    E        Strand   -109.52    117.57       3.2      1JHF
+ASG  ALA B  147   59    E        Strand   -124.57    150.57       0.8      1JHF
+ASG  ARG B  148   60    E        Strand   -114.51    119.85     116.1      1JHF
+ASG  ILE B  149   61    E        Strand   -113.30     92.28      28.4      1JHF
+ASG  ASP B  150   62    T          Turn     52.05     72.10      67.5      1JHF
+ASG  ASP B  151   63    T          Turn     75.59      3.02     131.0      1JHF
+ASG  GLU B  152   64    E        Strand   -128.90    136.61     132.2      1JHF
+ASG  VAL B  153   65    E        Strand   -103.99    143.81      72.4      1JHF
+ASG  THR B  154   66    E        Strand   -145.84    156.97      28.0      1JHF
+ASG  VAL B  155   67    E        Strand   -119.95    113.65      17.1      1JHF
+ASG  LYS B  156   68    E        Strand   -150.29    170.16      19.0      1JHF
+ASG  ARG B  157   69    E        Strand    -87.26    132.76      64.5      1JHF
+ASG  LEU B  158   70    E        Strand    -84.64    142.56      10.9      1JHF
+ASG  LYS B  159   71    E        Strand   -150.93     89.41      96.5      1JHF
+ASG  LYS B  160   72    E        Strand   -110.04    143.60      80.5      1JHF
+ASG  GLN B  161   73    E        Strand   -144.32     93.98     142.7      1JHF
+ASG  GLY B  162   74    T          Turn     65.68   -123.59      46.4      1JHF
+ASG  ASN B  163   75    T          Turn    -85.09     -1.43      65.3      1JHF
+ASG  LYS B  164   76    E        Strand    -99.76    118.59      97.9      1JHF
+ASG  VAL B  165   77    E        Strand   -121.41    118.75       0.0      1JHF
+ASG  GLU B  166   78    E        Strand   -109.04    133.03      45.7      1JHF
+ASG  LEU B  167   79    E        Strand   -116.22    106.11       0.6      1JHF
+ASG  LEU B  168   80    E        Strand    -95.97    143.02      34.5      1JHF
+ASG  PRO B  169   81    C          Coil    -88.13    177.56      24.1      1JHF
+ASG  GLU B  170   82    C          Coil   -129.52     65.84      49.6      1JHF
+ASG  ASN B  171   83    T          Turn   -171.80    115.66      14.8      1JHF
+ASG  SER B  172   84    T          Turn    -59.79    -17.19     121.5      1JHF
+ASG  GLU B  173   85    T          Turn    -82.82     -8.78     170.9      1JHF
+ASG  PHE B  174   86    T          Turn   -101.08    144.34      94.0      1JHF
+ASG  LYS B  175   87    C          Coil    -84.61    149.75     183.5      1JHF
+ASG  PRO B  176   88    C          Coil    -77.75    154.71      72.6      1JHF
+ASG  ILE B  177   89    E        Strand   -105.18    131.15      62.5      1JHF
+ASG  VAL B  178   90    E        Strand   -114.98    132.27      85.5      1JHF
+ASG  VAL B  179   91    E        Strand   -128.02    144.04       3.7      1JHF
+ASG  ASP B  180   92    E        Strand   -114.49    115.05      58.9      1JHF
+ASG  LEU B  181   93    T          Turn    -54.98    -27.90      62.4      1JHF
+ASG  ARG B  182   94    T          Turn    -75.47    -17.64     175.1      1JHF
+ASG  GLN B  183   95    T          Turn   -108.68    -47.28     157.7      1JHF
+ASG  GLN B  184   96    T          Turn   -116.12    154.66      72.6      1JHF
+ASG  SER B  185   97    C          Coil    -72.04    128.25      80.3      1JHF
+ASG  PHE B  186   98    E        Strand   -132.77    130.11      39.8      1JHF
+ASG  THR B  187   99    E        Strand   -141.81    134.76      58.0      1JHF
+ASG  ILE B  188  100    E        Strand    -87.82    122.95      20.6      1JHF
+ASG  GLU B  189  101    E        Strand    -92.75    -30.03      44.7      1JHF
+ASG  GLY B  190  102    E        Strand    174.75   -176.29       0.0      1JHF
+ASG  LEU B  191  103    E        Strand   -113.64    135.18      21.0      1JHF
+ASG  ALA B  192  104    E        Strand    -76.50    129.96      23.4      1JHF
+ASG  VAL B  193  105    E        Strand   -124.13     -0.48      20.5      1JHF
+ASG  GLY B  194  106    E        Strand    177.71    178.86       8.5      1JHF
+ASG  VAL B  195  107    E        Strand   -145.51    145.25       3.4      1JHF
+ASG  ILE B  196  108    E        Strand   -129.78    123.66       3.6      1JHF
+ASG  ARG B  197  109    E        Strand   -121.96    121.03      39.7      1JHF
+ASG  ASN B  198  110    C          Coil   -143.83     38.32      37.8      1JHF
+ASG  GLY B  199  111    C          Coil    -47.24    360.00     110.3      1JHF

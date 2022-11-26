@@ -1,0 +1,21 @@
+Now that I've figured out alignments, it's time to make some template models.
+
+Fragment assembly might be doable.
+how would I try and do this?
+A) make alignment
+B) shiftify the alignment, maybe there are some different amino acids that have similar behaviors?
+B.2) (Probably better to just rely on the BLOSUM-sixty-whatever score.)
+C) Model how those fragments would look on their own
+D) Add the fragment models together, and fill out the spaces from the sequence.
+
+Might be better to do "fragment assembly" or some other closely related idea on secondary structure models. At any rate it would be better to have the secondary structures already figured out.
+
+How might that look like?
+A) Use some kind of markov process to guesstimate what is an alpha strand or whatever
+B) compaire the similar parts of the alignement to each other or compare the similar strands to each other. Comepaire both to both.
+C) Do the rest of the protein
+D) put it together
+E) compare it to some kind of software produced thing
+
+
+That's pretty much the most I can do. I'm not using any heavy chemistry stuff

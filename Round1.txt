@@ -1,0 +1,10 @@
+Doing a Template Based approach. So I need to figure out what template/group of proteins I intend to model.
+1) Template Selection, 2) Target-Template alignment, 3) Model Construction, 4) Model assessment. Steps 1&2 use alignments
+
+AKA 1)Search for proteins with known 3d structures. 2) Pick those structures and use them as templates. 3) Align the sequences with the target sequence. 4) Build the model for the target sequence given its alignment with the template structures. 5) Evaluate the model on a variety of criteria.
+
+One can use BLAST to compare each of the target sequences with each of the database templates. I want to pick a globular protein aparently. Small proteins have few entries
+
+=============================================================
+I'm gonna use k-mers and BLOSUM-62 as an identity measurement
+=============================================================

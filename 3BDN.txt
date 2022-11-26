@@ -1,0 +1,649 @@
+REM  --------------------------------------------------------------------  3BDN
+REM                                                                        3BDN
+REM  STRIDE: Knowledge-based secondary structure assignment                3BDN
+REM  Please cite: D.Frishman & P.Argos, Proteins XX, XXX-XXX, 1995         3BDN
+REM                                                                        3BDN
+REM  Residue accessible surface area calculation                           3BDN
+REM  Please cite: F.Eisenhaber & P.Argos, J.Comp.Chem. 14, 1272-1280, 1993 3BDN
+REM               F.Eisenhaber et al., J.Comp.Chem., 1994, submitted       3BDN
+REM                                                                        3BDN
+REM  ------------------------ General information -----------------------  3BDN
+REM                                                                        3BDN
+HDR  TRANSCRIPTION/DNA                       15-NOV-07   3BDN              3BDN
+CMP  MOL_ID: 1;                                                            3BDN
+CMP   MOLECULE: DNA (5'-                                                   3BDN
+CMP   D(*DAP*DAP*DTP*DAP*DCP*DCP*DAP*DCP*DTP*DGP*DGP*DCP*DGP*DGP*D         3BDN
+CMP   P*DTP*DAP*DT)-3');                                                   3BDN
+CMP   CHAIN: C;                                                            3BDN
+CMP   ENGINEERED: YES;                                                     3BDN
+CMP   MOL_ID: 2;                                                           3BDN
+CMP   MOLECULE: DNA (5'-                                                   3BDN
+CMP   D(*DTP*DAP*DTP*DAP*DTP*DCP*DAP*DCP*DCP*DGP*DCP*DCP*DAP*DGP*D         3BDN
+CMP   P*DTP*DAP*DT)-3');                                                   3BDN
+CMP   CHAIN: D;                                                            3BDN
+CMP   ENGINEERED: YES;                                                     3BDN
+CMP   MOL_ID: 3;                                                           3BDN
+CMP   MOLECULE: LAMBDA REPRESSOR;                                          3BDN
+CMP   CHAIN: A, B;                                                         3BDN
+CMP   SYNONYM: REPRESSOR PROTEIN CI;                                       3BDN
+CMP   ENGINEERED: YES;                                                     3BDN
+CMP   MUTATION: YES                                                        3BDN
+SRC  MOL_ID: 1;                                                            3BDN
+SRC   SYNTHETIC: YES;                                                      3BDN
+SRC   MOL_ID: 2;                                                           3BDN
+SRC   SYNTHETIC: YES;                                                      3BDN
+SRC   MOL_ID: 3;                                                           3BDN
+SRC   ORGANISM_SCIENTIFIC: ENTEROBACTERIA PHAGE LAMBDA;                    3BDN
+SRC   ORGANISM_TAXID: 10710;                                               3BDN
+SRC   STRAIN: BL21 DE3;                                                    3BDN
+SRC   GENE: CI;                                                            3BDN
+SRC   EXPRESSION_SYSTEM: ESCHERICHIA COLI BL21(DE3);                       3BDN
+SRC   EXPRESSION_SYSTEM_TAXID: 469008;                                     3BDN
+SRC   EXPRESSION_SYSTEM_STRAIN: BL21 DE3;                                  3BDN
+SRC   EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID;                              3BDN
+SRC   EXPRESSION_SYSTEM_PLASMID: PET17B                                    3BDN
+AUT  S.E.STAYROOK,P.JARU-AMPORNPAN,A.HOCHSCHILD,M.LEWIS                    3BDN
+REM                                                                        3BDN
+REM  -------------------- Secondary structure summary -------------------  3BDN
+REM                                                                        3BDN
+CHN  /home/proj/stride/tmp/tmpwQVKP5pdb A                                  3BDN
+REM                                                                        3BDN
+REM                .         .         .         .         .               3BDN
+SEQ  1    STKKKPLTQEQLEDARRLKAIYEKKKNELGLSQESVADKMGMGQSGVGAL   50          3BDN
+STR       TTTTT   HHHHHHHHHHHHHHHHHHTTTT   HHHHHHH   HHHHHHH               3BDN
+REM                                                                        3BDN
+REM                .         .         .         .         .               3BDN
+SEQ  51   FNGINALNAYNAALLAKILKVSVEEFSPSIAREIYEMYEAVSMQPSLRSE  100          3BDN
+STR       HTTTTT  HHHHHHHHHH    GGGTTHHHHHHHHHHHHHHH                       3BDN
+REM                                                                        3BDN
+REM                .         .         .         .         .               3BDN
+SEQ  101  YEYPVFSHVQAGMFSPELRTFTKGDAERWVSTTKKASDSAFWLEVEGNSM  150          3BDN
+STR            TTTTTTTTTTTTT  TTTT           TTTT EEEEE  TTT               3BDN
+REM                                                                        3BDN
+REM                .         .         .         .         .               3BDN
+SEQ  151  TAPTGSKPSFPDGMLILVDPEQAVEPGDFCIARLGGDEFTFKKLIRGSGQ  200          3BDN
+STR       T TTTT    TTTEEEEETTTT  TTTEEEEEEETTTT   EEEE TTTT               3BDN
+REM                                                                        3BDN
+REM                .         .         .                                   3BDN
+SEQ  201  VFLQPLNPQYPMIPESCSVVGKVIASQWPEETFG                  234          3BDN
+STR        EEETTTTTTT B   EEEEEEEEE  BTTTTT                                3BDN
+REM                                                                        3BDN
+CHN  /home/proj/stride/tmp/tmpwQVKP5pdb B                                  3BDN
+REM                                                                        3BDN
+REM                .         .         .         .         .               3BDN
+SEQ  1    STKKKPLTQEQLEDARRLKAIYEKKKNELGLSQESVADKMGMGQSGVGAL   50          3BDN
+STR       TTTT    HHHHHHHHHHHHHHHHHHHHH   HHHHHHH    TTTTHHH               3BDN
+REM                                                                        3BDN
+REM                .         .         .         .         .               3BDN
+SEQ  51   FNGINALNAYNAALLAKILKVSVEEFSPSIAREIYEMYEAVSMQPSLRSE  100          3BDN
+STR       HHTTTT  HHHHHHHHHHH  TTTTTTHHHHHHHHHHHHHTTT   TTTT               3BDN
+REM                                                                        3BDN
+REM                .         .         .         .         .               3BDN
+SEQ  101  YEYPVFSHVQAGMFSPELRTFTKGDAERWVSTTKKASDSAFWLEVEGNSM  150          3BDN
+STR            TTT TTTTTTTT TTTTTT TTT  TTTT  TTTT EEEE  TTT               3BDN
+REM                                                                        3BDN
+REM                .         .         .         .         .               3BDN
+SEQ  151  TAPTGSKPSFPDGMLILVDPEQAVEPGDFCIARLGGDEFTFKKLIRGSGQ  200          3BDN
+STR       TTTTTT    TTTEEEE TTTT  TTTEEEEEEETTTEEEEEEEEEETTE               3BDN
+REM                                                                        3BDN
+REM                .         .         .                                   3BDN
+SEQ  201  VFLQPLNPQYPMIPESCSVVGKVIASQWPEETFG                  234          3BDN
+STR       EEEETTTTTTT B    EEEE    B  TTTTT                                3BDN
+REM                                                                        3BDN
+REM                                                                        3BDN
+REM                                                                        3BDN
+LOC  AlphaHelix   GLN     9 A      LYS     26 A                            3BDN
+LOC  AlphaHelix   GLU    34 A      MET     40 A                            3BDN
+LOC  AlphaHelix   GLN    44 A      PHE     51 A                            3BDN
+LOC  AlphaHelix   ALA    59 A      ILE     68 A                            3BDN
+LOC  AlphaHelix   PRO    78 A      SER     92 A                            3BDN
+LOC  AlphaHelix   GLN     9 B      LEU     29 B                            3BDN
+LOC  AlphaHelix   GLN    33 B      LYS     39 B                            3BDN
+LOC  AlphaHelix   GLY    48 B      ASN     52 B                            3BDN
+LOC  AlphaHelix   ALA    59 B      LEU     69 B                            3BDN
+LOC  AlphaHelix   PRO    78 B      ALA     90 B                            3BDN
+LOC  310Helix     VAL    73 A      GLU     75 A                            3BDN
+LOC  Strand       PHE   141 A      VAL    145 A                            3BDN
+LOC  Strand       MET   164 A      VAL    168 A                            3BDN
+LOC  Strand       ASP   178 A      LEU    184 A                            3BDN
+LOC  Strand       LYS   192 A      ILE    195 A                            3BDN
+LOC  Strand       PHE   202 A      GLN    204 A                            3BDN
+LOC  Strand       CYS   219 A      ALA    227 A                            3BDN
+LOC  Strand       TRP   142 B      VAL    145 B                            3BDN
+LOC  Strand       MET   164 B      LEU    167 B                            3BDN
+LOC  Strand       ASP   178 B      LEU    184 B                            3BDN
+LOC  Strand       GLU   188 B      GLY    197 B                            3BDN
+LOC  Strand       GLN   200 B      GLN    204 B                            3BDN
+LOC  Strand       SER   220 B      GLY    223 B                            3BDN
+LOC  TurnIV       SER     1 A      LYS      4 A                            3BDN
+LOC  TurnIV       THR     2 A      LYS      5 A                            3BDN
+LOC  TurnI        LYS    26 A      LEU     29 A                            3BDN
+LOC  TurnI        ASN    27 A      GLY     30 A                            3BDN
+LOC  TurnIV       PHE    51 A      ILE     54 A                            3BDN
+LOC  TurnVIII     GLY    53 A      ALA     56 A                            3BDN
+LOC  TurnIV       GLU    75 A      PRO     78 A                            3BDN
+LOC  TurnIV       HIS   108 A      ALA    111 A                            3BDN
+LOC  TurnIV       GLN   110 A      MET    113 A                            3BDN
+LOC  TurnIV       PHE   114 A      GLU    117 A                            3BDN
+LOC  TurnIV       SER   115 A      LEU    118 A                            3BDN
+LOC  TurnIV       PHE   121 A      GLY    124 A                            3BDN
+LOC  TurnIV       ALA   136 A      SER    139 A                            3BDN
+LOC  TurnIV       ASN   148 A      THR    151 A                            3BDN
+LOC  TurnIV       PRO   153 A      SER    156 A                            3BDN
+LOC  TurnIV       PRO   161 A      MET    164 A                            3BDN
+LOC  TurnIV       ASP   169 A      GLN    172 A                            3BDN
+LOC  TurnIV       GLU   175 A      ASP    178 A                            3BDN
+LOC  TurnIV       ARG   183 A      GLY    186 A                            3BDN
+LOC  TurnIV       LEU   184 A      ASP    187 A                            3BDN
+LOC  TurnIV       GLY   185 A      GLU    188 A                            3BDN
+LOC  TurnIV       GLY   197 A      GLN    200 A                            3BDN
+LOC  TurnIV       PRO   205 A      PRO    208 A                            3BDN
+LOC  TurnI        ASN   207 A      TYR    210 A                            3BDN
+LOC  TurnVIII     PRO   208 A      PRO    211 A                            3BDN
+LOC  TurnI        PRO   231 A      THR    234 A                            3BDN
+LOC  TurnI        GLU   232 A      PHE    235 A                            3BDN
+LOC  GammaInv     PHE   106 A      HIS    108 A                            3BDN
+LOC  TurnIV       SER     1 B      LYS      4 B                            3BDN
+LOC  TurnIV       GLN    44 B      VAL     47 B                            3BDN
+LOC  TurnVIII     GLY    53 B      ALA     56 B                            3BDN
+LOC  TurnIV       SER    72 B      GLU     75 B                            3BDN
+LOC  TurnIV       VAL    73 B      PHE     76 B                            3BDN
+LOC  TurnI        GLU    74 B      SER     77 B                            3BDN
+LOC  TurnIV       ALA    90 B      MET     93 B                            3BDN
+LOC  TurnIV       LEU    97 B      GLU    100 B                            3BDN
+LOC  TurnIV       GLN   110 B      MET    113 B                            3BDN
+LOC  TurnIV       PHE   114 B      GLU    117 B                            3BDN
+LOC  TurnII'      ARG   119 B      THR    122 B                            3BDN
+LOC  TurnIV       PHE   121 B      GLY    124 B                            3BDN
+LOC  TurnIV       SER   131 B      LYS    134 B                            3BDN
+LOC  TurnII'      SER   137 B      ALA    140 B                            3BDN
+LOC  TurnIV       ASN   148 B      THR    151 B                            3BDN
+LOC  TurnIV       ALA   152 B      GLY    155 B                            3BDN
+LOC  TurnIV       PRO   153 B      SER    156 B                            3BDN
+LOC  TurnII       PRO   161 B      MET    164 B                            3BDN
+LOC  TurnIV       ASP   169 B      GLN    172 B                            3BDN
+LOC  TurnII       GLU   175 B      ASP    178 B                            3BDN
+LOC  TurnIV       ARG   183 B      GLY    186 B                            3BDN
+LOC  TurnI'       LEU   184 B      ASP    187 B                            3BDN
+LOC  TurnIV       GLY   185 B      GLU    188 B                            3BDN
+LOC  TurnIV       ARG   196 B      GLY    199 B                            3BDN
+LOC  TurnIV       GLY   197 B      GLN    200 B                            3BDN
+LOC  TurnI        ASN   207 B      TYR    210 B                            3BDN
+LOC  TurnIV       PRO   208 B      PRO    211 B                            3BDN
+LOC  TurnIV       PRO   231 B      THR    234 B                            3BDN
+LOC  TurnI        GLU   232 B      PHE    235 B                            3BDN
+LOC  GammaInv     PHE   106 B      HIS    108 B                            3BDN
+LOC  GammaClassic  ALA   126 B      ARG    128 B                           3BDN
+LOC  GammaInv     PRO   205 B      ASN    207 B                            3BDN
+REM                                                                        3BDN
+REM  --------------- Detailed secondary structure assignment-------------  3BDN
+REM                                                                        3BDN
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      3BDN
+ASG  SER A    1    1    T          Turn    360.00    161.05      91.6      3BDN
+ASG  THR A    2    2    T          Turn   -146.71    -21.81     128.2      3BDN
+ASG  LYS A    3    3    T          Turn    -63.68    -19.30     192.0      3BDN
+ASG  LYS A    4    4    T          Turn   -109.66   -134.73     168.1      3BDN
+ASG  LYS A    5    5    T          Turn   -112.07    119.96      89.4      3BDN
+ASG  PRO A    6    6    C          Coil    -63.12    122.73      83.6      3BDN
+ASG  LEU A    7    7    C          Coil   -106.93    126.69     127.9      3BDN
+ASG  THR A    8    8    C          Coil   -139.69    125.57      87.7      3BDN
+ASG  GLN A    9    9    H    AlphaHelix    -25.02    -87.30     130.7      3BDN
+ASG  GLU A   10   10    H    AlphaHelix    -59.36    -43.38      71.2      3BDN
+ASG  GLN A   11   11    H    AlphaHelix    -56.16     16.61     127.5      3BDN
+ASG  LEU A   12   12    H    AlphaHelix   -134.79    -61.77      53.1      3BDN
+ASG  GLU A   13   13    H    AlphaHelix    -66.11      7.10      24.6      3BDN
+ASG  ASP A   14   14    H    AlphaHelix    -68.56    -44.11      15.4      3BDN
+ASG  ALA A   15   15    H    AlphaHelix    -65.58    -39.98       5.3      3BDN
+ASG  ARG A   16   16    H    AlphaHelix    -46.60    -62.95     143.9      3BDN
+ASG  ARG A   17   17    H    AlphaHelix    -36.45    -52.59      73.0      3BDN
+ASG  LEU A   18   18    H    AlphaHelix    -54.35    -74.60       6.4      3BDN
+ASG  LYS A   19   19    H    AlphaHelix    -50.00    -34.12      83.2      3BDN
+ASG  ALA A   20   20    H    AlphaHelix    -52.59    -50.72      64.4      3BDN
+ASG  ILE A   21   21    H    AlphaHelix    -72.79    -32.76      66.1      3BDN
+ASG  TYR A   22   22    H    AlphaHelix    -47.50    -66.05      14.5      3BDN
+ASG  GLU A   23   23    H    AlphaHelix    -54.93    -30.69     113.6      3BDN
+ASG  LYS A   24   24    H    AlphaHelix    -63.99    -39.93     187.2      3BDN
+ASG  LYS A   25   25    H    AlphaHelix   -104.70     -7.42      91.3      3BDN
+ASG  LYS A   26   26    H    AlphaHelix    -51.04    -37.37      50.7      3BDN
+ASG  ASN A   27   27    T          Turn   -102.48     -4.16     105.5      3BDN
+ASG  GLU A   28   28    T          Turn    -81.33    -16.18     137.4      3BDN
+ASG  LEU A   29   29    T          Turn    -99.90    -36.57     122.5      3BDN
+ASG  GLY A   30   30    T          Turn    130.57     43.04      66.3      3BDN
+ASG  LEU A   31   31    C          Coil   -129.94    135.75      23.6      3BDN
+ASG  SER A   32   32    C          Coil    -91.55   -104.76      84.2      3BDN
+ASG  GLN A   33   33    C          Coil   -154.93    -44.67      63.9      3BDN
+ASG  GLU A   34   34    H    AlphaHelix    -51.42    -13.91     137.1      3BDN
+ASG  SER A   35   35    H    AlphaHelix    -86.02    -28.83      31.6      3BDN
+ASG  VAL A   36   36    H    AlphaHelix    -83.71    -37.50      14.0      3BDN
+ASG  ALA A   37   37    H    AlphaHelix    -48.37    -58.27       6.6      3BDN
+ASG  ASP A   38   38    H    AlphaHelix    -76.66   -177.45      83.4      3BDN
+ASG  LYS A   39   39    H    AlphaHelix     67.25    -45.71     113.5      3BDN
+ASG  MET A   40   40    H    AlphaHelix    -75.07    -56.80      32.5      3BDN
+ASG  GLY A   41   41    C          Coil    119.97     30.76      41.7      3BDN
+ASG  MET A   42   42    C          Coil   -157.92    139.40      73.3      3BDN
+ASG  GLY A   43   43    C          Coil    -35.78    155.57      51.1      3BDN
+ASG  GLN A   44   44    H    AlphaHelix    -72.86    -46.31      45.9      3BDN
+ASG  SER A   45   45    H    AlphaHelix    -42.87    -43.07     117.5      3BDN
+ASG  GLY A   46   46    H    AlphaHelix    -69.91    -49.40      31.3      3BDN
+ASG  VAL A   47   47    H    AlphaHelix    -64.55    -62.43       3.7      3BDN
+ASG  GLY A   48   48    H    AlphaHelix    -49.24    -22.20      16.3      3BDN
+ASG  ALA A   49   49    H    AlphaHelix    -95.40    -33.53      30.3      3BDN
+ASG  LEU A   50   50    H    AlphaHelix    -46.38    -56.84      28.1      3BDN
+ASG  PHE A   51   51    H    AlphaHelix    -45.87    -22.37      25.7      3BDN
+ASG  ASN A   52   52    T          Turn    -82.31      7.83     111.7      3BDN
+ASG  GLY A   53   53    T          Turn     79.36      2.96      20.5      3BDN
+ASG  ILE A   54   54    T          Turn    -74.80    -28.42      87.4      3BDN
+ASG  ASN A   55   55    T          Turn   -129.70    137.35      70.1      3BDN
+ASG  ALA A   56   56    T          Turn    -87.29    130.78      69.4      3BDN
+ASG  LEU A   57   57    C          Coil    -56.38    135.54      29.4      3BDN
+ASG  ASN A   58   58    C          Coil    -82.02    165.65      77.3      3BDN
+ASG  ALA A   59   59    H    AlphaHelix    -58.52    -18.98      11.9      3BDN
+ASG  TYR A   60   60    H    AlphaHelix    -71.23    -94.57      80.9      3BDN
+ASG  ASN A   61   61    H    AlphaHelix    -48.24    -19.59      29.7      3BDN
+ASG  ALA A   62   62    H    AlphaHelix    -41.95    -63.87       0.0      3BDN
+ASG  ALA A   63   63    H    AlphaHelix    -63.48    -17.61       3.8      3BDN
+ASG  LEU A   64   64    H    AlphaHelix    -68.45    -56.79      38.6      3BDN
+ASG  LEU A   65   65    H    AlphaHelix    -78.74     75.52       9.2      3BDN
+ASG  ALA A   66   66    H    AlphaHelix   -160.00    -42.91       4.7      3BDN
+ASG  LYS A   67   67    H    AlphaHelix    -69.96     -1.82     107.9      3BDN
+ASG  ILE A   68   68    H    AlphaHelix   -102.97    -69.67      56.5      3BDN
+ASG  LEU A   69   69    C          Coil    -85.88     30.25      28.6      3BDN
+ASG  LYS A   70   70    C          Coil     43.41     41.10     145.3      3BDN
+ASG  VAL A   71   71    C          Coil   -120.64   -129.33      25.2      3BDN
+ASG  SER A   72   72    C          Coil    175.92     94.73      19.2      3BDN
+ASG  VAL A   73   73    G      310Helix     -8.28    -73.43       1.0      3BDN
+ASG  GLU A   74   74    G      310Helix    -33.46    -29.29      69.6      3BDN
+ASG  GLU A   75   75    G      310Helix    -60.78    -18.33     103.5      3BDN
+ASG  PHE A   76   76    T          Turn   -144.26    -24.65       4.2      3BDN
+ASG  SER A   77   77    T          Turn   -146.99     86.44       0.0      3BDN
+ASG  PRO A   78   78    H    AlphaHelix    -59.86    -41.13      57.2      3BDN
+ASG  SER A   79   79    H    AlphaHelix    -40.08    -33.82      45.5      3BDN
+ASG  ILE A   80   80    H    AlphaHelix   -107.59    -25.29      11.0      3BDN
+ASG  ALA A   81   81    H    AlphaHelix    -47.56    -52.99      18.6      3BDN
+ASG  ARG A   82   82    H    AlphaHelix    -49.57    -58.68     189.3      3BDN
+ASG  GLU A   83   83    H    AlphaHelix    -51.37    -46.96      61.8      3BDN
+ASG  ILE A   84   84    H    AlphaHelix    -67.21    -45.02       8.0      3BDN
+ASG  TYR A   85   85    H    AlphaHelix    -54.76    -39.82     137.4      3BDN
+ASG  GLU A   86   86    H    AlphaHelix    -90.89     44.30      81.4      3BDN
+ASG  MET A   87   87    H    AlphaHelix   -133.69    -17.43       3.9      3BDN
+ASG  TYR A   88   88    H    AlphaHelix    -73.06    -34.12      45.3      3BDN
+ASG  GLU A   89   89    H    AlphaHelix    -65.00    -25.78      89.5      3BDN
+ASG  ALA A   90   90    H    AlphaHelix    -62.96    -30.17       2.6      3BDN
+ASG  VAL A   91   91    H    AlphaHelix   -103.00    -17.98       5.2      3BDN
+ASG  SER A   92   92    H    AlphaHelix    -58.94    -59.12      70.5      3BDN
+ASG  MET A   93   93    C          Coil     34.16   -142.22      87.2      3BDN
+ASG  GLN A   94   94    C          Coil   -127.45    159.68     115.6      3BDN
+ASG  PRO A   95   95    C          Coil    -53.08     92.28     102.5      3BDN
+ASG  SER A   96   96    C          Coil    -74.43   -174.19      54.0      3BDN
+ASG  LEU A   97   97    C          Coil    -75.18     10.65     157.2      3BDN
+ASG  ARG A   98   98    C          Coil   -130.53     85.85      82.4      3BDN
+ASG  SER A   99   99    C          Coil     61.96    154.74      23.9      3BDN
+ASG  GLU A  100  100    C          Coil   -123.28    -48.27     121.7      3BDN
+ASG  TYR A  101  101    C          Coil    176.64    145.06     144.7      3BDN
+ASG  GLU A  102  102    C          Coil   -132.43   -158.14      17.8      3BDN
+ASG  TYR A  103  103    C          Coil    -31.33    170.83      66.2      3BDN
+ASG  PRO A  104  104    C          Coil    -98.51    178.17      36.7      3BDN
+ASG  VAL A  105  105    C          Coil   -100.28    146.86      46.5      3BDN
+ASG  PHE A  106  106    T          Turn   -156.91    134.24      67.1      3BDN
+ASG  SER A  107  107    T          Turn    -74.93     56.16      72.7      3BDN
+ASG  HIS A  108  108    T          Turn     53.64   -102.64      64.7      3BDN
+ASG  VAL A  109  109    T          Turn     32.63   -150.08      91.2      3BDN
+ASG  GLN A  110  110    T          Turn    -67.16    116.28     131.7      3BDN
+ASG  ALA A  111  111    T          Turn    -80.34      8.94      13.5      3BDN
+ASG  GLY A  112  112    T          Turn    113.30    -34.30       7.4      3BDN
+ASG  MET A  113  113    T          Turn     65.28    104.52      52.0      3BDN
+ASG  PHE A  114  114    T          Turn    -82.16     60.93      85.5      3BDN
+ASG  SER A  115  115    T          Turn    -90.65    -40.19      96.0      3BDN
+ASG  PRO A  116  116    T          Turn    -93.65    -89.18      65.3      3BDN
+ASG  GLU A  117  117    T          Turn   -131.96     -4.24      93.5      3BDN
+ASG  LEU A  118  118    T          Turn     72.93    111.55      23.8      3BDN
+ASG  ARG A  119  119    C          Coil    -98.99    -16.08     202.3      3BDN
+ASG  THR A  120  120    C          Coil     18.79    165.96      88.2      3BDN
+ASG  PHE A  121  121    T          Turn    101.14     99.00     159.5      3BDN
+ASG  THR A  122  122    T          Turn   -137.05     25.03     132.5      3BDN
+ASG  LYS A  123  123    T          Turn   -157.79    -59.85     145.3      3BDN
+ASG  GLY A  124  124    T          Turn    110.74    -42.03      36.0      3BDN
+ASG  ASP A  125  125    C          Coil    -71.34    168.01      94.5      3BDN
+ASG  ALA A  126  126    C          Coil   -161.81    -64.63      11.2      3BDN
+ASG  GLU A  127  127    C          Coil     70.29     88.89     160.1      3BDN
+ASG  ARG A  128  128    C          Coil   -145.89    118.79     114.2      3BDN
+ASG  TRP A  129  129    C          Coil    -95.47   -146.60     158.5      3BDN
+ASG  VAL A  130  130    C          Coil     64.23    139.81      19.2      3BDN
+ASG  SER A  131  131    C          Coil   -130.78   -160.00       7.8      3BDN
+ASG  THR A  132  132    C          Coil   -165.12   -167.54      11.0      3BDN
+ASG  THR A  133  133    C          Coil    -63.54     93.10      49.6      3BDN
+ASG  LYS A  134  134    C          Coil    -37.38    119.78      69.4      3BDN
+ASG  LYS A  135  135    C          Coil   -136.51   -144.88      89.4      3BDN
+ASG  ALA A  136  136    T          Turn     61.96     39.92       5.4      3BDN
+ASG  SER A  137  137    T          Turn    -76.41     17.96     120.7      3BDN
+ASG  ASP A  138  138    T          Turn   -174.71    114.63      70.6      3BDN
+ASG  SER A  139  139    T          Turn     74.85    -11.58      32.7      3BDN
+ASG  ALA A  140  140    C          Coil    -66.99   -179.34       1.8      3BDN
+ASG  PHE A  141  141    E        Strand   -179.56    162.64      23.1      3BDN
+ASG  TRP A  142  142    E        Strand    -78.21    173.91      15.0      3BDN
+ASG  LEU A  143  143    E        Strand   -159.00    136.69       9.0      3BDN
+ASG  GLU A  144  144    E        Strand   -105.59    127.90      64.9      3BDN
+ASG  VAL A  145  145    E        Strand   -114.01    109.34      14.6      3BDN
+ASG  GLU A  146  146    C          Coil   -100.39    130.67     114.9      3BDN
+ASG  GLY A  147  147    C          Coil    130.06    140.77      28.9      3BDN
+ASG  ASN A  148  148    T          Turn    -86.56     10.86      68.1      3BDN
+ASG  SER A  149  149    T          Turn    -62.46     17.33       3.8      3BDN
+ASG  MET A  150  150    T          Turn   -152.28    -37.55       2.8      3BDN
+ASG  THR A  151  151    T          Turn    -22.08    107.10       3.2      3BDN
+ASG  ALA A  152  152    C          Coil    -67.02    166.96       5.8      3BDN
+ASG  PRO A  153  153    T          Turn    -74.75    108.21      59.5      3BDN
+ASG  THR A  154  154    T          Turn     35.17    -81.43      84.5      3BDN
+ASG  GLY A  155  155    T          Turn    -97.84     98.60      59.4      3BDN
+ASG  SER A  156  156    T          Turn   -163.82    146.80      32.5      3BDN
+ASG  LYS A  157  157    C          Coil    -65.08    168.02     158.7      3BDN
+ASG  PRO A  158  158    C          Coil      6.32    174.43      26.9      3BDN
+ASG  SER A  159  159    C          Coil   -153.94    -77.73      11.8      3BDN
+ASG  PHE A  160  160    C          Coil     60.92    101.34      19.0      3BDN
+ASG  PRO A  161  161    T          Turn    -94.82   -116.24      10.2      3BDN
+ASG  ASP A  162  162    T          Turn   -108.20    154.47      50.6      3BDN
+ASG  GLY A  163  163    T          Turn     25.54     45.57       8.5      3BDN
+ASG  MET A  164  164    E        Strand   -110.66    141.95       3.3      3BDN
+ASG  LEU A  165  165    E        Strand    -92.44    160.20      19.6      3BDN
+ASG  ILE A  166  166    E        Strand   -158.37    149.96       6.0      3BDN
+ASG  LEU A  167  167    E        Strand   -120.93    123.71       8.2      3BDN
+ASG  VAL A  168  168    E        Strand   -103.35    138.51       0.2      3BDN
+ASG  ASP A  169  169    T          Turn   -150.00     80.13       4.6      3BDN
+ASG  PRO A  170  170    T          Turn    -51.01    -40.24      24.2      3BDN
+ASG  GLU A  171  171    T          Turn    -59.49     93.44      88.3      3BDN
+ASG  GLN A  172  172    T          Turn    163.31    163.60      48.3      3BDN
+ASG  ALA A  173  173    C          Coil    -47.30    -79.11      85.4      3BDN
+ASG  VAL A  174  174    C          Coil     80.94     81.52      29.7      3BDN
+ASG  GLU A  175  175    T          Turn   -143.73    159.37      92.5      3BDN
+ASG  PRO A  176  176    T          Turn    -50.63    113.74      49.4      3BDN
+ASG  GLY A  177  177    T          Turn    130.83    -25.47      35.9      3BDN
+ASG  ASP A  178  178    E        Strand   -102.71    159.91      15.0      3BDN
+ASG  PHE A  179  179    E        Strand    -96.27    133.22       6.4      3BDN
+ASG  CYS A  180  180    E        Strand   -143.81    133.41       0.8      3BDN
+ASG  ILE A  181  181    E        Strand    -85.77    140.00      10.2      3BDN
+ASG  ALA A  182  182    E        Strand   -159.38    161.80       7.5      3BDN
+ASG  ARG A  183  183    E        Strand   -149.38    172.60      34.8      3BDN
+ASG  LEU A  184  184    E        Strand   -133.81    161.92      79.9      3BDN
+ASG  GLY A  185  185    T          Turn     60.78      1.20      67.1      3BDN
+ASG  GLY A  186  186    T          Turn     62.01     51.98      54.0      3BDN
+ASG  ASP A  187  187    T          Turn   -149.03    -51.30     113.6      3BDN
+ASG  GLU A  188  188    T          Turn    -82.43   -176.33      97.0      3BDN
+ASG  PHE A  189  189    C          Coil   -175.78    141.37      66.4      3BDN
+ASG  THR A  190  190    C          Coil   -144.09    -24.28      74.8      3BDN
+ASG  PHE A  191  191    C          Coil     61.49    142.01      11.3      3BDN
+ASG  LYS A  192  192    E        Strand   -151.77   -178.01      30.3      3BDN
+ASG  LYS A  193  193    E        Strand    -82.01    154.21      57.9      3BDN
+ASG  LEU A  194  194    E        Strand   -101.82    150.81      10.8      3BDN
+ASG  ILE A  195  195    E        Strand   -138.51    156.70      45.8      3BDN
+ASG  ARG A  196  196    C          Coil    -99.72     88.12     161.0      3BDN
+ASG  GLY A  197  197    T          Turn   -114.09    137.75      23.4      3BDN
+ASG  SER A  198  198    T          Turn    -56.31    156.46     111.6      3BDN
+ASG  GLY A  199  199    T          Turn     57.61     77.41      56.0      3BDN
+ASG  GLN A  200  200    T          Turn     72.37    175.52      87.2      3BDN
+ASG  VAL A  201  201    C          Coil   -121.63    146.63      64.8      3BDN
+ASG  PHE A  202  202    E        Strand   -140.46    178.64      39.1      3BDN
+ASG  LEU A  203  203    E        Strand   -118.60    124.56      15.7      3BDN
+ASG  GLN A  204  204    E        Strand   -106.96    111.03      67.9      3BDN
+ASG  PRO A  205  205    T          Turn    -44.38    127.06       1.4      3BDN
+ASG  LEU A  206  206    T          Turn    -83.42     24.92      17.2      3BDN
+ASG  ASN A  207  207    T          Turn   -127.17     78.25      20.6      3BDN
+ASG  PRO A  208  208    T          Turn    -45.53     -8.92      84.0      3BDN
+ASG  GLN A  209  209    T          Turn    -68.74    -13.40     165.4      3BDN
+ASG  TYR A  210  210    T          Turn    -92.64    139.26      77.8      3BDN
+ASG  PRO A  211  211    T          Turn    -58.09    148.55     108.6      3BDN
+ASG  MET A  212  212    C          Coil   -128.86    140.55      86.6      3BDN
+ASG  ILE A  213  213    B        Bridge   -149.58    153.41     121.4      3BDN
+ASG  PRO A  214  214    C          Coil    -62.90    360.00      58.3      3BDN
+ASG  GLU A  217  215    C          Coil    360.00    -59.38     182.6      3BDN
+ASG  SER A  218  216    C          Coil    -82.43    -25.74      79.6      3BDN
+ASG  CYS A  219  217    E        Strand    -80.55    161.35      34.1      3BDN
+ASG  SER A  220  218    E        Strand   -137.79    161.18      46.7      3BDN
+ASG  VAL A  221  219    E        Strand   -120.44     80.73      71.2      3BDN
+ASG  VAL A  222  220    E        Strand    -67.47    -72.63      37.5      3BDN
+ASG  GLY A  223  221    E        Strand   -118.49    168.04       1.2      3BDN
+ASG  LYS A  224  222    E        Strand   -119.26    133.21      14.8      3BDN
+ASG  VAL A  225  223    E        Strand    -80.70    142.28       5.4      3BDN
+ASG  ILE A  226  224    E        Strand   -134.55    -19.57      12.0      3BDN
+ASG  ALA A  227  225    E        Strand   -165.86    159.17      13.4      3BDN
+ASG  SER A  228  226    C          Coil   -159.19    125.21       2.3      3BDN
+ASG  GLN A  229  227    C          Coil   -129.90    160.33       6.8      3BDN
+ASG  TRP A  230  228    B        Bridge    -72.95    150.27       8.4      3BDN
+ASG  PRO A  231  229    T          Turn    -61.65    161.00      11.4      3BDN
+ASG  GLU A  232  230    T          Turn    -56.29    -61.11     108.1      3BDN
+ASG  GLU A  233  231    T          Turn    -82.32     -5.71     123.5      3BDN
+ASG  THR A  234  232    T          Turn    -58.13     15.12      48.8      3BDN
+ASG  PHE A  235  233    T          Turn   -129.89    -94.28      15.1      3BDN
+ASG  GLY A  236  234    C          Coil    -65.17    360.00      86.0      3BDN
+ASG  SER B    1    1    T          Turn    360.00     -5.07     142.6      3BDN
+ASG  THR B    2    2    T          Turn   -102.30    -10.83     159.9      3BDN
+ASG  LYS B    3    3    T          Turn    -95.51    -32.41     179.2      3BDN
+ASG  LYS B    4    4    T          Turn   -134.07    169.91     165.2      3BDN
+ASG  LYS B    5    5    C          Coil    -92.04    144.38     129.6      3BDN
+ASG  PRO B    6    6    C          Coil    -98.49    -81.08     119.9      3BDN
+ASG  LEU B    7    7    C          Coil     63.78    124.33      29.0      3BDN
+ASG  THR B    8    8    C          Coil    -73.94    174.16      58.2      3BDN
+ASG  GLN B    9    9    H    AlphaHelix    -80.45    -39.97     150.8      3BDN
+ASG  GLU B   10   10    H    AlphaHelix    -79.40    -15.68      19.5      3BDN
+ASG  GLN B   11   11    H    AlphaHelix    -65.10    -31.84      64.1      3BDN
+ASG  LEU B   12   12    H    AlphaHelix    -72.68    -51.56      82.5      3BDN
+ASG  GLU B   13   13    H    AlphaHelix    -42.94    -34.26      58.2      3BDN
+ASG  ASP B   14   14    H    AlphaHelix    -79.29    -45.28       9.6      3BDN
+ASG  ALA B   15   15    H    AlphaHelix    -66.25    -26.19       4.4      3BDN
+ASG  ARG B   16   16    H    AlphaHelix    -68.73    -71.60     168.0      3BDN
+ASG  ARG B   17   17    H    AlphaHelix    -36.22    -38.89      74.7      3BDN
+ASG  LEU B   18   18    H    AlphaHelix    -64.15    -60.59       6.4      3BDN
+ASG  LYS B   19   19    H    AlphaHelix    -36.33    -62.76      94.2      3BDN
+ASG  ALA B   20   20    H    AlphaHelix    -50.50    -32.83      48.4      3BDN
+ASG  ILE B   21   21    H    AlphaHelix    -78.22    -30.24      34.9      3BDN
+ASG  TYR B   22   22    H    AlphaHelix    -64.45    -35.57      23.9      3BDN
+ASG  GLU B   23   23    H    AlphaHelix    -50.93    -63.44      83.6      3BDN
+ASG  LYS B   24   24    H    AlphaHelix    -61.39    -21.18     155.0      3BDN
+ASG  LYS B   25   25    H    AlphaHelix    -99.26    -35.68      58.9      3BDN
+ASG  LYS B   26   26    H    AlphaHelix    -54.76    -41.02      65.1      3BDN
+ASG  ASN B   27   27    H    AlphaHelix    -40.18    -64.42     125.8      3BDN
+ASG  GLU B   28   28    H    AlphaHelix    -51.12    -45.86     150.5      3BDN
+ASG  LEU B   29   29    H    AlphaHelix   -118.33     -0.32      71.7      3BDN
+ASG  GLY B   30   30    C          Coil     68.00     81.41      62.3      3BDN
+ASG  LEU B   31   31    C          Coil   -140.98    148.15      30.9      3BDN
+ASG  SER B   32   32    C          Coil   -148.58    177.18      44.6      3BDN
+ASG  GLN B   33   33    H    AlphaHelix    -53.32    -61.97      62.6      3BDN
+ASG  GLU B   34   34    H    AlphaHelix    -58.03    -28.51     112.7      3BDN
+ASG  SER B   35   35    H    AlphaHelix    -66.49    -44.37      41.2      3BDN
+ASG  VAL B   36   36    H    AlphaHelix    -53.81    -70.60      10.5      3BDN
+ASG  ALA B   37   37    H    AlphaHelix    -19.75    -56.36       1.8      3BDN
+ASG  ASP B   38   38    H    AlphaHelix    -80.80    -20.70     134.8      3BDN
+ASG  LYS B   39   39    H    AlphaHelix    -84.53     10.54     153.5      3BDN
+ASG  MET B   40   40    C          Coil   -131.91    -64.47      50.9      3BDN
+ASG  GLY B   41   41    C          Coil    157.42     46.54      69.7      3BDN
+ASG  MET B   42   42    C          Coil   -172.87   -174.64      88.2      3BDN
+ASG  GLY B   43   43    C          Coil   -100.68    170.38      36.5      3BDN
+ASG  GLN B   44   44    T          Turn    -54.01    -52.04      64.8      3BDN
+ASG  SER B   45   45    T          Turn     30.69    -86.75      98.1      3BDN
+ASG  GLY B   46   46    T          Turn    -90.92    -81.31      19.8      3BDN
+ASG  VAL B   47   47    T          Turn     42.34    -72.94       8.9      3BDN
+ASG  GLY B   48   48    H    AlphaHelix    -60.79    -41.86       8.3      3BDN
+ASG  ALA B   49   49    H    AlphaHelix    -39.37    -41.70      14.8      3BDN
+ASG  LEU B   50   50    H    AlphaHelix    -71.40    -65.02      30.3      3BDN
+ASG  PHE B   51   51    H    AlphaHelix    -40.33    -48.62      13.3      3BDN
+ASG  ASN B   52   52    H    AlphaHelix    -69.41    -37.25      91.8      3BDN
+ASG  GLY B   53   53    T          Turn    106.93     22.67      14.6      3BDN
+ASG  ILE B   54   54    T          Turn    -75.34    -59.91      96.2      3BDN
+ASG  ASN B   55   55    T          Turn    -98.81    150.97      81.5      3BDN
+ASG  ALA B   56   56    T          Turn    -98.77    153.61      46.5      3BDN
+ASG  LEU B   57   57    C          Coil    -84.69    145.29      46.7      3BDN
+ASG  ASN B   58   58    C          Coil    -87.10    112.36      80.0      3BDN
+ASG  ALA B   59   59    H    AlphaHelix    -31.16    -41.14       8.8      3BDN
+ASG  TYR B   60   60    H    AlphaHelix    -62.47    -45.28      89.8      3BDN
+ASG  ASN B   61   61    H    AlphaHelix    -68.68    -42.41      36.9      3BDN
+ASG  ALA B   62   62    H    AlphaHelix    -49.87    -37.22       3.8      3BDN
+ASG  ALA B   63   63    H    AlphaHelix    -72.17    -17.68       0.8      3BDN
+ASG  LEU B   64   64    H    AlphaHelix    -79.36    -57.60      23.3      3BDN
+ASG  LEU B   65   65    H    AlphaHelix    -46.66    -50.96      11.8      3BDN
+ASG  ALA B   66   66    H    AlphaHelix    -56.89    -44.80       1.5      3BDN
+ASG  LYS B   67   67    H    AlphaHelix    -56.33    -41.61      74.3      3BDN
+ASG  ILE B   68   68    H    AlphaHelix    -68.87    -37.83      49.3      3BDN
+ASG  LEU B   69   69    H    AlphaHelix    -79.75      9.76       9.6      3BDN
+ASG  LYS B   70   70    C          Coil     63.02      9.68     130.0      3BDN
+ASG  VAL B   71   71    C          Coil   -132.43    173.78      17.6      3BDN
+ASG  SER B   72   72    T          Turn    -68.61   -153.72      11.0      3BDN
+ASG  VAL B   73   73    T          Turn   -117.52    -39.40       1.6      3BDN
+ASG  GLU B   74   74    T          Turn    -57.18    -37.16      21.7      3BDN
+ASG  GLU B   75   75    T          Turn    -49.28    -35.62      78.9      3BDN
+ASG  PHE B   76   76    T          Turn   -112.11    -42.61       6.0      3BDN
+ASG  SER B   77   77    T          Turn   -141.63    126.24       0.0      3BDN
+ASG  PRO B   78   78    H    AlphaHelix    -92.05    -47.02      20.4      3BDN
+ASG  SER B   79   79    H    AlphaHelix    -44.34    -51.80      20.5      3BDN
+ASG  ILE B   80   80    H    AlphaHelix    -46.17    -57.12      15.4      3BDN
+ASG  ALA B   81   81    H    AlphaHelix    -40.64    -56.85       0.4      3BDN
+ASG  ARG B   82   82    H    AlphaHelix    -52.41    -54.07      11.6      3BDN
+ASG  GLU B   83   83    H    AlphaHelix    -47.31    -68.38      60.6      3BDN
+ASG  ILE B   84   84    H    AlphaHelix    -42.10    -67.63       3.0      3BDN
+ASG  TYR B   85   85    H    AlphaHelix    -35.22    -63.10       2.6      3BDN
+ASG  GLU B   86   86    H    AlphaHelix    -40.37    -69.13      60.7      3BDN
+ASG  MET B   87   87    H    AlphaHelix    -44.20    -20.83       9.0      3BDN
+ASG  TYR B   88   88    H    AlphaHelix    -70.91    -59.13      46.5      3BDN
+ASG  GLU B   89   89    H    AlphaHelix    -31.14    -48.88      23.8      3BDN
+ASG  ALA B   90   90    H    AlphaHelix    -26.86    -50.05       3.9      3BDN
+ASG  VAL B   91   91    T          Turn    -71.81   -115.09      26.1      3BDN
+ASG  SER B   92   92    T          Turn    -69.06    136.19      61.5      3BDN
+ASG  MET B   93   93    T          Turn    -87.77    118.92     163.9      3BDN
+ASG  GLN B   94   94    C          Coil    159.14    131.61     103.4      3BDN
+ASG  PRO B   95   95    C          Coil    -89.51    104.09      69.3      3BDN
+ASG  SER B   96   96    C          Coil    -65.89    -32.35      53.3      3BDN
+ASG  LEU B   97   97    T          Turn     64.27    -31.03      30.1      3BDN
+ASG  ARG B   98   98    T          Turn     41.53   -100.66      88.9      3BDN
+ASG  SER B   99   99    T          Turn   -105.62    -61.99      47.7      3BDN
+ASG  GLU B  100  100    T          Turn    -95.95    -61.10      29.2      3BDN
+ASG  TYR B  101  101    C          Coil     65.14   -168.20      10.8      3BDN
+ASG  GLU B  102  102    C          Coil   -155.38   -110.81       8.6      3BDN
+ASG  TYR B  103  103    C          Coil     67.10    147.78      26.3      3BDN
+ASG  PRO B  104  104    C          Coil   -100.45   -175.05      18.8      3BDN
+ASG  VAL B  105  105    C          Coil   -113.77    -40.74      10.4      3BDN
+ASG  PHE B  106  106    T          Turn     66.13    156.10      18.6      3BDN
+ASG  SER B  107  107    T          Turn    -74.02     59.28      56.0      3BDN
+ASG  HIS B  108  108    T          Turn     31.10     92.93      65.0      3BDN
+ASG  VAL B  109  109    C          Coil    172.33    160.56      61.3      3BDN
+ASG  GLN B  110  110    T          Turn    -75.45    136.47      52.0      3BDN
+ASG  ALA B  111  111    T          Turn   -100.15     66.84      30.3      3BDN
+ASG  GLY B  112  112    T          Turn     70.77    -39.94      52.3      3BDN
+ASG  MET B  113  113    T          Turn     79.35    166.49      25.8      3BDN
+ASG  PHE B  114  114    T          Turn    -70.05   -133.77      67.6      3BDN
+ASG  SER B  115  115    T          Turn     48.22    -75.53      88.1      3BDN
+ASG  PRO B  116  116    T          Turn    -58.33    166.76      59.5      3BDN
+ASG  GLU B  117  117    T          Turn    -75.88    169.81      43.4      3BDN
+ASG  LEU B  118  118    C          Coil    -97.57    134.88      78.1      3BDN
+ASG  ARG B  119  119    T          Turn    -73.29     55.45     194.5      3BDN
+ASG  THR B  120  120    T          Turn     58.62   -126.24      57.8      3BDN
+ASG  PHE B  121  121    T          Turn    -60.26    -33.05     110.6      3BDN
+ASG  THR B  122  122    T          Turn     62.82    176.65      25.9      3BDN
+ASG  LYS B  123  123    T          Turn    -45.69    -34.95     187.4      3BDN
+ASG  GLY B  124  124    T          Turn    -90.91    147.82       4.6      3BDN
+ASG  ASP B  125  125    C          Coil   -123.74    -66.94      68.5      3BDN
+ASG  ALA B  126  126    T          Turn     51.38     13.76      36.1      3BDN
+ASG  GLU B  127  127    T          Turn     60.04    -20.16     110.7      3BDN
+ASG  ARG B  128  128    T          Turn     57.21    112.21      32.6      3BDN
+ASG  TRP B  129  129    C          Coil   -107.31    168.33      91.3      3BDN
+ASG  VAL B  130  130    C          Coil   -168.60    142.37      20.5      3BDN
+ASG  SER B  131  131    T          Turn    141.72     91.42       9.8      3BDN
+ASG  THR B  132  132    T          Turn   -148.10     20.94       9.4      3BDN
+ASG  THR B  133  133    T          Turn     69.56    104.74      48.7      3BDN
+ASG  LYS B  134  134    T          Turn   -115.09    147.48      37.2      3BDN
+ASG  LYS B  135  135    C          Coil   -100.58   -166.82     137.0      3BDN
+ASG  ALA B  136  136    C          Coil    -49.87    124.04      43.3      3BDN
+ASG  SER B  137  137    T          Turn   -108.55    -35.28       6.9      3BDN
+ASG  ASP B  138  138    T          Turn     50.25   -102.17      39.7      3BDN
+ASG  SER B  139  139    T          Turn   -122.48     26.04      29.5      3BDN
+ASG  ALA B  140  140    T          Turn    -58.34   -177.39       6.7      3BDN
+ASG  PHE B  141  141    C          Coil    176.32    159.10      40.9      3BDN
+ASG  TRP B  142  142    E        Strand    -79.41    155.33      12.6      3BDN
+ASG  LEU B  143  143    E        Strand   -146.44    141.25      17.0      3BDN
+ASG  GLU B  144  144    E        Strand    -83.51    147.59      63.3      3BDN
+ASG  VAL B  145  145    E        Strand   -108.23    115.84       7.5      3BDN
+ASG  GLU B  146  146    C          Coil   -102.52    -69.33      90.1      3BDN
+ASG  GLY B  147  147    C          Coil    -57.80    131.23      40.9      3BDN
+ASG  ASN B  148  148    T          Turn    -75.03     32.26      48.0      3BDN
+ASG  SER B  149  149    T          Turn    -28.90    -87.50      19.1      3BDN
+ASG  MET B  150  150    T          Turn    -99.01    118.97       1.2      3BDN
+ASG  THR B  151  151    T          Turn   -130.41     98.99       8.0      3BDN
+ASG  ALA B  152  152    T          Turn    -37.78    137.50       8.9      3BDN
+ASG  PRO B  153  153    T          Turn    -73.63     83.05      55.7      3BDN
+ASG  THR B  154  154    T          Turn     43.52     79.90      66.5      3BDN
+ASG  GLY B  155  155    T          Turn     75.66     88.73      32.2      3BDN
+ASG  SER B  156  156    T          Turn   -130.59   -139.16      53.9      3BDN
+ASG  LYS B  157  157    C          Coil    -66.05    -92.50     172.5      3BDN
+ASG  PRO B  158  158    C          Coil    -98.34   -141.62       3.5      3BDN
+ASG  SER B  159  159    C          Coil   -150.84   -121.16       5.4      3BDN
+ASG  PHE B  160  160    C          Coil     96.30     67.99       0.6      3BDN
+ASG  PRO B  161  161    T          Turn    -90.53   -161.11       2.4      3BDN
+ASG  ASP B  162  162    T          Turn    -67.08    156.87      31.1      3BDN
+ASG  GLY B  163  163    T          Turn     69.80    -24.23      14.7      3BDN
+ASG  MET B  164  164    E        Strand    -55.76   -176.84       1.2      3BDN
+ASG  LEU B  165  165    E        Strand   -125.36    131.57      16.4      3BDN
+ASG  ILE B  166  166    E        Strand   -122.14    165.54       3.8      3BDN
+ASG  LEU B  167  167    E        Strand   -130.66    125.09      24.7      3BDN
+ASG  VAL B  168  168    C          Coil    -77.18    -68.34       5.4      3BDN
+ASG  ASP B  169  169    T          Turn     40.38    106.54       0.8      3BDN
+ASG  PRO B  170  170    T          Turn    -93.89    -17.89      17.7      3BDN
+ASG  GLU B  171  171    T          Turn    -82.30     44.13     106.2      3BDN
+ASG  GLN B  172  172    T          Turn   -112.01    160.11      54.5      3BDN
+ASG  ALA B  173  173    C          Coil    -88.96    112.40      51.2      3BDN
+ASG  VAL B  174  174    C          Coil   -113.57    117.35      33.2      3BDN
+ASG  GLU B  175  175    T          Turn   -131.81    166.11     101.4      3BDN
+ASG  PRO B  176  176    T          Turn    -55.85    141.84      64.8      3BDN
+ASG  GLY B  177  177    T          Turn     84.24      4.30      36.4      3BDN
+ASG  ASP B  178  178    E        Strand   -113.64    158.40      21.7      3BDN
+ASG  PHE B  179  179    E        Strand   -101.82    145.28       7.4      3BDN
+ASG  CYS B  180  180    E        Strand   -172.57   -174.69       0.0      3BDN
+ASG  ILE B  181  181    E        Strand   -135.52    155.65      11.8      3BDN
+ASG  ALA B  182  182    E        Strand   -138.21    179.00       8.6      3BDN
+ASG  ARG B  183  183    E        Strand   -108.10    141.72      36.6      3BDN
+ASG  LEU B  184  184    E        Strand   -141.88    148.46      48.6      3BDN
+ASG  GLY B  185  185    T          Turn     51.97     13.26      69.9      3BDN
+ASG  GLY B  186  186    T          Turn     82.65    -16.52      68.7      3BDN
+ASG  ASP B  187  187    T          Turn   -124.15    -41.53     107.2      3BDN
+ASG  GLU B  188  188    E        Strand    -68.72    143.23      96.3      3BDN
+ASG  PHE B  189  189    E        Strand   -110.55    149.04      85.9      3BDN
+ASG  THR B  190  190    E        Strand   -154.64    137.71      18.8      3BDN
+ASG  PHE B  191  191    E        Strand    -98.90    114.81       4.4      3BDN
+ASG  LYS B  192  192    E        Strand   -150.14    176.28      17.6      3BDN
+ASG  LYS B  193  193    E        Strand    -95.90    144.39      41.1      3BDN
+ASG  LEU B  194  194    E        Strand   -106.79    119.41      25.1      3BDN
+ASG  ILE B  195  195    E        Strand   -140.09    136.49      51.9      3BDN
+ASG  ARG B  196  196    E        Strand    -89.62     93.19     169.5      3BDN
+ASG  GLY B  197  197    E        Strand   -102.47    132.05      26.9      3BDN
+ASG  SER B  198  198    T          Turn     44.38     23.99     146.3      3BDN
+ASG  GLY B  199  199    T          Turn     69.82     61.86      51.3      3BDN
+ASG  GLN B  200  200    E        Strand   -154.29    169.76      85.1      3BDN
+ASG  VAL B  201  201    E        Strand    -80.35    120.36      50.7      3BDN
+ASG  PHE B  202  202    E        Strand   -132.95    156.10      45.7      3BDN
+ASG  LEU B  203  203    E        Strand   -125.15    110.58       2.8      3BDN
+ASG  GLN B  204  204    E        Strand   -113.29    146.56      66.1      3BDN
+ASG  PRO B  205  205    T          Turn   -101.77    144.36       6.0      3BDN
+ASG  LEU B  206  206    T          Turn    -63.82     44.36      23.0      3BDN
+ASG  ASN B  207  207    T          Turn   -151.35     73.16      15.2      3BDN
+ASG  PRO B  208  208    T          Turn    -46.30    -28.13      97.9      3BDN
+ASG  GLN B  209  209    T          Turn    -55.16     18.50     170.8      3BDN
+ASG  TYR B  210  210    T          Turn   -148.58    167.47     108.0      3BDN
+ASG  PRO B  211  211    T          Turn    -94.61   -147.07      88.1      3BDN
+ASG  MET B  212  212    C          Coil   -169.63    100.81      82.9      3BDN
+ASG  ILE B  213  213    B        Bridge    -70.14    129.05      51.0      3BDN
+ASG  PRO B  214  214    C          Coil    -57.68    360.00      66.3      3BDN
+ASG  GLU B  217  215    C          Coil    360.00    -59.08     178.2      3BDN
+ASG  SER B  218  216    C          Coil    -89.23      2.30      99.2      3BDN
+ASG  CYS B  219  217    C          Coil    -73.94    142.27      28.5      3BDN
+ASG  SER B  220  218    E        Strand   -127.83    124.66      67.6      3BDN
+ASG  VAL B  221  219    E        Strand    -59.84    168.54      65.0      3BDN
+ASG  VAL B  222  220    E        Strand   -137.22    -36.34      31.9      3BDN
+ASG  GLY B  223  221    E        Strand    179.48    153.15       0.4      3BDN
+ASG  LYS B  224  222    C          Coil   -104.44     84.96      30.3      3BDN
+ASG  VAL B  225  223    C          Coil    -17.38    118.18       0.2      3BDN
+ASG  ILE B  226  224    C          Coil   -109.14    -37.96      42.9      3BDN
+ASG  ALA B  227  225    C          Coil   -148.05   -172.81      14.6      3BDN
+ASG  SER B  228  226    B        Bridge   -127.99    153.93       0.0      3BDN
+ASG  GLN B  229  227    C          Coil   -133.49    -28.43       8.5      3BDN
+ASG  TRP B  230  228    C          Coil     78.83   -174.44      11.0      3BDN
+ASG  PRO B  231  229    T          Turn    -93.97    -79.36      26.4      3BDN
+ASG  GLU B  232  230    T          Turn    149.91    -48.10      51.7      3BDN
+ASG  GLU B  233  231    T          Turn    -39.80    -24.00     140.9      3BDN
+ASG  THR B  234  232    T          Turn    -55.98     -0.48      16.5      3BDN
+ASG  PHE B  235  233    T          Turn   -151.32     99.29      37.8      3BDN
+ASG  GLY B  236  234    C          Coil    153.22    360.00     142.4      3BDN

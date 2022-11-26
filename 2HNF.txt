@@ -1,0 +1,208 @@
+REM  --------------------------------------------------------------------  2HNF
+REM                                                                        2HNF
+REM  STRIDE: Knowledge-based secondary structure assignment                2HNF
+REM  Please cite: D.Frishman & P.Argos, Proteins XX, XXX-XXX, 1995         2HNF
+REM                                                                        2HNF
+REM  Residue accessible surface area calculation                           2HNF
+REM  Please cite: F.Eisenhaber & P.Argos, J.Comp.Chem. 14, 1272-1280, 1993 2HNF
+REM               F.Eisenhaber et al., J.Comp.Chem., 1994, submitted       2HNF
+REM                                                                        2HNF
+REM  ------------------------ General information -----------------------  2HNF
+REM                                                                        2HNF
+HDR  VIRAL PROTEIN                           12-JUL-06   2HNF              2HNF
+CMP  MOL_ID: 1;                                                            2HNF
+CMP   MOLECULE: REPRESSOR PROTEIN CI101-229DM-K192A;                       2HNF
+CMP   CHAIN: A;                                                            2HNF
+CMP   FRAGMENT: FRAGMENT OF LAMBDA REPRESSOR CONTAINING THE CLEAVA         2HNF
+CMP   REGION;                                                              2HNF
+CMP   ENGINEERED: YES;                                                     2HNF
+CMP   MUTATION: YES                                                        2HNF
+SRC  MOL_ID: 1;                                                            2HNF
+SRC   ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               2HNF
+SRC   ORGANISM_TAXID: 562;                                                 2HNF
+SRC   EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 2HNF
+SRC   EXPRESSION_SYSTEM_TAXID: 562;                                        2HNF
+SRC   EXPRESSION_SYSTEM_STRAIN: BL21-AI;                                   2HNF
+SRC   EXPRESSION_SYSTEM_VECTOR: PLASMID;                                   2HNF
+SRC   EXPRESSION_SYSTEM_PLASMID: PET14B                                    2HNF
+AUT  D.NDJONKA,C.E.BELL                                                    2HNF
+REM                                                                        2HNF
+REM  -------------------- Secondary structure summary -------------------  2HNF
+REM                                                                        2HNF
+CHN  /home/proj/stride/tmp/tmpizF3IMpdb A                                  2HNF
+REM                                                                        2HNF
+REM                .         .         .         .         .               2HNF
+SEQ  1    GSHMYEYPVFSHVQAGMFSPELRTFTKGDAERWVSTTKKASDSAFWLEVE   50          2HNF
+STR           EEEEEE EEE TTTTTTEEEE      EEEEE    TTTTEEEEE                2HNF
+REM                                                                        2HNF
+REM                .         .         .         .         .               2HNF
+SEQ  51   GNSMTTPKTSFPDGMLILVDPEQAVEPGDFCIARLGGDEFTFAKLIRDSG  100          2HNF
+STR        TTTT      TTTEEEEEETTT  TTTEEEEEEETTTEEEEEEEEEETT               2HNF
+REM                                                                        2HNF
+REM                .         .         .                                   2HNF
+SEQ  101  QVFLQPLNPQYPMIPCNESCSVVGKVIASQ                      130          2HNF
+STR       EEEEETTTTTT  EE TTTEEEEEEEEEE                                    2HNF
+REM                                                                        2HNF
+REM                                                                        2HNF
+REM                                                                        2HNF
+LOC  Strand       TYR   101 A      PHE    106 A                            2HNF
+LOC  Strand       HIS   108 A      GLN    110 A                            2HNF
+LOC  Strand       LEU   118 A      PHE    121 A                            2HNF
+LOC  Strand       ARG   128 A      THR    132 A                            2HNF
+LOC  Strand       PHE   141 A      VAL    145 A                            2HNF
+LOC  Strand       MET   164 A      ASP    169 A                            2HNF
+LOC  Strand       ASP   178 A      LEU    184 A                            2HNF
+LOC  Strand       GLU   188 A      ASP    197 A                            2HNF
+LOC  Strand       GLN   200 A      GLN    204 A                            2HNF
+LOC  Strand       ILE   213 A      PRO    214 A                            2HNF
+LOC  Strand       CYS   219 A      SER    228 A                            2HNF
+LOC  TurnI        GLY   112 A      SER    115 A                            2HNF
+LOC  TurnI        SER   115 A      LEU    118 A                            2HNF
+LOC  TurnI        SER   137 A      ALA    140 A                            2HNF
+LOC  TurnI        ASN   148 A      THR    151 A                            2HNF
+LOC  TurnII       PRO   161 A      MET    164 A                            2HNF
+LOC  TurnI        ASP   169 A      GLN    172 A                            2HNF
+LOC  TurnII       GLU   175 A      ASP    178 A                            2HNF
+LOC  TurnIV       ARG   183 A      GLY    186 A                            2HNF
+LOC  TurnIV       LEU   184 A      ASP    187 A                            2HNF
+LOC  TurnIV       GLY   185 A      GLU    188 A                            2HNF
+LOC  TurnIV       ARG   196 A      GLY    199 A                            2HNF
+LOC  TurnI'       ASP   197 A      GLN    200 A                            2HNF
+LOC  TurnVIII     PRO   205 A      PRO    208 A                            2HNF
+LOC  TurnI        ASN   207 A      TYR    210 A                            2HNF
+LOC  TurnIV       ASN   216 A      CYS    219 A                            2HNF
+LOC  Disulfide    CYS   215 A      CYS    219 A            PDB             2HNF
+REM                                                                        2HNF
+REM  --------------- Detailed secondary structure assignment-------------  2HNF
+REM                                                                        2HNF
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      2HNF
+ASG  GLY A   97    1    C          Coil    360.00     45.17     122.4      2HNF
+ASG  SER A   98    2    C          Coil    -58.40   -177.00     117.0      2HNF
+ASG  HIS A   99    3    C          Coil   -131.21    150.70     150.4      2HNF
+ASG  MET A  100    4    C          Coil   -107.77    162.10     107.7      2HNF
+ASG  TYR A  101    5    E        Strand   -125.24    157.40      77.3      2HNF
+ASG  GLU A  102    6    E        Strand   -139.18    121.27     116.7      2HNF
+ASG  TYR A  103    7    E        Strand   -113.31    156.48      15.4      2HNF
+ASG  PRO A  104    8    E        Strand    -68.57    145.16      28.9      2HNF
+ASG  VAL A  105    9    E        Strand   -102.20    126.58      10.1      2HNF
+ASG  PHE A  106   10    E        Strand   -105.28    139.99      73.0      2HNF
+ASG  SER A  107   11    C          Coil    -86.23    153.93      71.9      2HNF
+ASG  HIS A  108   12    E        Strand   -153.97    153.19      12.7      2HNF
+ASG  VAL A  109   13    E        Strand   -127.40    165.93      74.0      2HNF
+ASG  GLN A  110   14    E        Strand    -60.77    128.03      71.9      2HNF
+ASG  ALA A  111   15    C          Coil    -67.52    -51.72      32.2      2HNF
+ASG  GLY A  112   16    T          Turn   -109.82   -156.78      37.2      2HNF
+ASG  MET A  113   17    T          Turn   -100.14    -46.25     138.4      2HNF
+ASG  PHE A  114   18    T          Turn   -108.70     21.33     178.9      2HNF
+ASG  SER A  115   19    T          Turn   -135.86     75.17      50.7      2HNF
+ASG  PRO A  116   20    T          Turn    -62.33    -24.49      47.2      2HNF
+ASG  GLU A  117   21    T          Turn    -75.91    -10.18      23.7      2HNF
+ASG  LEU A  118   22    E        Strand    -99.65    125.04      19.8      2HNF
+ASG  ARG A  119   23    E        Strand   -117.10    166.40      23.5      2HNF
+ASG  THR A  120   24    E        Strand   -143.17    132.43      29.7      2HNF
+ASG  PHE A  121   25    E        Strand    -67.64    140.34      65.0      2HNF
+ASG  THR A  122   26    C          Coil    -87.55    147.91      55.2      2HNF
+ASG  LYS A  123   27    C          Coil    -71.96    131.42     215.7      2HNF
+ASG  GLY A  124   28    C          Coil    138.27    156.10      58.5      2HNF
+ASG  ASP A  125   29    C          Coil    -71.23    172.89     159.5      2HNF
+ASG  ALA A  126   30    C          Coil    -83.01    137.59      22.7      2HNF
+ASG  GLU A  127   31    C          Coil   -109.57    -24.62     184.2      2HNF
+ASG  ARG A  128   32    E        Strand   -116.77    145.81     111.2      2HNF
+ASG  TRP A  129   33    E        Strand   -130.46    132.05     121.3      2HNF
+ASG  VAL A  130   34    E        Strand   -119.46    133.95      20.6      2HNF
+ASG  SER A  131   35    E        Strand    -87.05    161.34      47.1      2HNF
+ASG  THR A  132   36    E        Strand   -170.91    159.92      12.9      2HNF
+ASG  THR A  133   37    C          Coil    -80.12    -17.85     116.9      2HNF
+ASG  LYS A  134   38    C          Coil    -62.44    114.22      90.7      2HNF
+ASG  LYS A  135   39    C          Coil    -80.53    128.67     152.6      2HNF
+ASG  ALA A  136   40    C          Coil   -143.93    175.98      23.4      2HNF
+ASG  SER A  137   41    T          Turn    -69.93    166.80      20.8      2HNF
+ASG  ASP A  138   42    T          Turn    -76.65      1.94     153.4      2HNF
+ASG  SER A  139   43    T          Turn    -99.01     -9.28      54.1      2HNF
+ASG  ALA A  140   44    T          Turn    -62.76    149.60       4.5      2HNF
+ASG  PHE A  141   45    E        Strand   -159.32    161.19      12.0      2HNF
+ASG  TRP A  142   46    E        Strand   -100.03    156.41       0.0      2HNF
+ASG  LEU A  143   47    E        Strand   -137.49    138.19       3.4      2HNF
+ASG  GLU A  144   48    E        Strand    -91.50    125.10      57.8      2HNF
+ASG  VAL A  145   49    E        Strand    -69.14    126.98      11.1      2HNF
+ASG  GLU A  146   50    C          Coil   -128.45     88.08      85.8      2HNF
+ASG  GLY A  147   51    C          Coil    139.09   -171.72      31.1      2HNF
+ASG  ASN A  148   52    T          Turn   -121.92     18.70      75.0      2HNF
+ASG  SER A  149   53    T          Turn    -62.96    -20.36      19.4      2HNF
+ASG  MET A  150   54    T          Turn   -113.35     23.80       0.2      2HNF
+ASG  THR A  151   55    T          Turn   -102.23    120.47      40.5      2HNF
+ASG  THR A  152   56    C          Coil    -72.32    150.36      37.9      2HNF
+ASG  PRO A  153   57    C          Coil    -67.92    360.00     131.4      2HNF
+ASG  LYS A  157   58    C          Coil    360.00     81.80     191.7      2HNF
+ASG  THR A  158   59    C          Coil    -74.55    132.77      80.0      2HNF
+ASG  SER A  159   60    C          Coil   -158.11    134.75      33.3      2HNF
+ASG  PHE A  160   61    C          Coil   -115.64     83.16      17.0      2HNF
+ASG  PRO A  161   62    T          Turn    -64.60    155.45      54.9      2HNF
+ASG  ASP A  162   63    T          Turn    -48.02    133.19     105.6      2HNF
+ASG  GLY A  163   64    T          Turn     96.81    -16.88      39.5      2HNF
+ASG  MET A  164   65    E        Strand    -73.65    144.70      37.8      2HNF
+ASG  LEU A  165   66    E        Strand    -98.77    139.97      15.2      2HNF
+ASG  ILE A  166   67    E        Strand   -124.75    136.02       2.6      2HNF
+ASG  LEU A  167   68    E        Strand    -91.70    120.95       0.0      2HNF
+ASG  VAL A  168   69    E        Strand   -108.63    126.89       0.0      2HNF
+ASG  ASP A  169   70    E        Strand   -118.24    101.10       2.4      2HNF
+ASG  PRO A  170   71    T          Turn    -58.43    -19.61      52.5      2HNF
+ASG  GLU A  171   72    T          Turn    -92.50      3.26     113.4      2HNF
+ASG  GLN A  172   73    T          Turn   -107.97    138.94      69.9      2HNF
+ASG  ALA A  173   74    C          Coil    -68.84    137.01      91.1      2HNF
+ASG  VAL A  174   75    C          Coil   -108.60    141.52      33.9      2HNF
+ASG  GLU A  175   76    T          Turn   -143.91    163.34     126.4      2HNF
+ASG  PRO A  176   77    T          Turn    -49.55    129.75      48.6      2HNF
+ASG  GLY A  177   78    T          Turn    114.88    -27.83      43.4      2HNF
+ASG  ASP A  178   79    E        Strand    -86.67    160.99      29.2      2HNF
+ASG  PHE A  179   80    E        Strand    -98.64    147.67      31.7      2HNF
+ASG  CYS A  180   81    E        Strand   -156.12    176.39       0.4      2HNF
+ASG  ILE A  181   82    E        Strand   -116.37    127.23       0.0      2HNF
+ASG  ALA A  182   83    E        Strand   -122.94    141.18       0.6      2HNF
+ASG  ARG A  183   84    E        Strand    -94.75    130.48      73.8      2HNF
+ASG  LEU A  184   85    E        Strand   -122.89    114.17      27.9      2HNF
+ASG  GLY A  185   86    T          Turn     99.00    -22.90      65.9      2HNF
+ASG  GLY A  186   87    T          Turn    115.01    -11.53      53.9      2HNF
+ASG  ASP A  187   88    T          Turn   -140.23    -29.95     101.5      2HNF
+ASG  GLU A  188   89    E        Strand    -94.87    147.30      78.8      2HNF
+ASG  PHE A  189   90    E        Strand   -131.30    167.02       3.0      2HNF
+ASG  THR A  190   91    E        Strand   -145.19    154.42       5.3      2HNF
+ASG  PHE A  191   92    E        Strand   -109.77    117.07      19.6      2HNF
+ASG  ALA A  192   93    E        Strand   -156.24    172.67       1.4      2HNF
+ASG  LYS A  193   94    E        Strand    -90.03    134.43      66.5      2HNF
+ASG  LEU A  194   95    E        Strand    -87.12    128.53      11.4      2HNF
+ASG  ILE A  195   96    E        Strand   -138.67    175.66      23.1      2HNF
+ASG  ARG A  196   97    E        Strand   -120.26    110.11     148.5      2HNF
+ASG  ASP A  197   98    E        Strand   -101.58    103.07      76.0      2HNF
+ASG  SER A  198   99    T          Turn     52.88     44.83     113.3      2HNF
+ASG  GLY A  199  100    T          Turn     80.81     -7.63      48.5      2HNF
+ASG  GLN A  200  101    E        Strand    -91.30    141.88     118.7      2HNF
+ASG  VAL A  201  102    E        Strand    -91.93    116.33      45.7      2HNF
+ASG  PHE A  202  103    E        Strand   -131.28    157.75      46.9      2HNF
+ASG  LEU A  203  104    E        Strand    -99.61    122.82       1.5      2HNF
+ASG  GLN A  204  105    E        Strand   -118.39    115.91      62.9      2HNF
+ASG  PRO A  205  106    T          Turn    -70.29    147.34      12.4      2HNF
+ASG  LEU A  206  107    T          Turn    -73.47    -21.77      28.6      2HNF
+ASG  ASN A  207  108    T          Turn    -92.19    107.21      14.6      2HNF
+ASG  PRO A  208  109    T          Turn    -48.43    -20.92      88.9      2HNF
+ASG  GLN A  209  110    T          Turn    -65.11    -19.03     156.0      2HNF
+ASG  TYR A  210  111    T          Turn   -105.62    142.09      56.3      2HNF
+ASG  PRO A  211  112    C          Coil    -71.50    151.18      85.2      2HNF
+ASG  MET A  212  113    C          Coil    -82.06    141.35      66.2      2HNF
+ASG  ILE A  213  114    E        Strand   -121.11    132.92      41.3      2HNF
+ASG  PRO A  214  115    E        Strand    -68.28    143.20      75.8      2HNF
+ASG  CYS A  215  116    C          Coil   -114.40     89.28      26.8      2HNF
+ASG  ASN A  216  117    T          Turn   -125.46   -108.28     133.8      2HNF
+ASG  GLU A  217  118    T          Turn    -60.74    -80.30     179.7      2HNF
+ASG  SER A  218  119    T          Turn    -68.43     25.75      92.8      2HNF
+ASG  CYS A  219  120    E        Strand   -131.65    130.39      12.5      2HNF
+ASG  SER A  220  121    E        Strand   -147.95    142.51      62.8      2HNF
+ASG  VAL A  221  122    E        Strand    -74.96    127.68      66.6      2HNF
+ASG  VAL A  222  123    E        Strand    -85.61    -39.29      24.2      2HNF
+ASG  GLY A  223  124    E        Strand    178.48    167.77       1.5      2HNF
+ASG  LYS A  224  125    E        Strand    -94.12    139.91      52.1      2HNF
+ASG  VAL A  225  126    E        Strand    -86.95    124.51      16.3      2HNF
+ASG  ILE A  226  127    E        Strand   -123.44     -0.23      26.4      2HNF
+ASG  ALA A  227  128    E        Strand   -168.71    168.19      21.7      2HNF
+ASG  SER A  228  129    E        Strand   -150.23    158.98      56.1      2HNF
+ASG  GLN A  229  130    C          Coil   -138.26    360.00     114.7      2HNF

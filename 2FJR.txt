@@ -1,0 +1,515 @@
+REM  --------------------------------------------------------------------  2FJR
+REM                                                                        2FJR
+REM  STRIDE: Knowledge-based secondary structure assignment                2FJR
+REM  Please cite: D.Frishman & P.Argos, Proteins XX, XXX-XXX, 1995         2FJR
+REM                                                                        2FJR
+REM  Residue accessible surface area calculation                           2FJR
+REM  Please cite: F.Eisenhaber & P.Argos, J.Comp.Chem. 14, 1272-1280, 1993 2FJR
+REM               F.Eisenhaber et al., J.Comp.Chem., 1994, submitted       2FJR
+REM                                                                        2FJR
+REM  ------------------------ General information -----------------------  2FJR
+REM                                                                        2FJR
+HDR  TRANSCRIPTION REGULATOR                 03-JAN-06   2FJR              2FJR
+CMP  MOL_ID: 1;                                                            2FJR
+CMP   MOLECULE: REPRESSOR PROTEIN CI;                                      2FJR
+CMP   CHAIN: A, B;                                                         2FJR
+CMP   ENGINEERED: YES;                                                     2FJR
+CMP   MUTATION: YES                                                        2FJR
+SRC  MOL_ID: 1;                                                            2FJR
+SRC   ORGANISM_SCIENTIFIC: ENTEROBACTERIA PHAGE 186;                       2FJR
+SRC   ORGANISM_TAXID: 29252;                                               2FJR
+SRC   GENE: CI;                                                            2FJR
+SRC   EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 2FJR
+SRC   EXPRESSION_SYSTEM_TAXID: 562                                         2FJR
+AUT  M.LEWIS                                                               2FJR
+REM                                                                        2FJR
+REM  -------------------- Secondary structure summary -------------------  2FJR
+REM                                                                        2FJR
+CHN  /home/proj/stride/tmp/tmpae-DZepdb A                                  2FJR
+REM                                                                        2FJR
+REM                .         .         .         .         .               2FJR
+SEQ  1    DSLGWSNVDVLDRICEAYGFSQKIQLANHFDIASSSLSNRYTRGAISYDF   50          2FJR
+STR        TTTT HHHHHHHHHHHH    HHHHHHHH   HHHHHHHHH     HHH               2FJR
+REM                                                                        2FJR
+REM                .         .         .         .         .               2FJR
+SEQ  51   AAHCALETGANLQWLLTGEGEAFVNNRESSDAKRIEGFTLSEEILKSDKQ  100          2FJR
+STR       HHHHHHHH   HHHHHH       TTTTTT TTEEEEEEEETTEEEEEEE               2FJR
+REM                                                                        2FJR
+REM                .         .         .         .         .               2FJR
+SEQ  101  LSVDAQFFTKPLTDGMAIRSEGKIYFVDKQASLSDGLWLVDIKGAISIRE  150          2FJR
+STR       EE  GGGTTTTTTTEEEEEETTEEEEEETTT    EEEEEEETTEEEEEE               2FJR
+REM                                                                        2FJR
+REM                .         .         .                                   2FJR
+SEQ  151  LTKLPGRKLHVAGGKVPFECGIDDIKTLGRVVGVYSEVN             189          2FJR
+STR       EEEETTTEEEEE TTTTEEEETTTTEEEEEEEEEEEE                            2FJR
+REM                                                                        2FJR
+CHN  /home/proj/stride/tmp/tmpae-DZepdb B                                  2FJR
+REM                                                                        2FJR
+REM                .         .         .         .         .               2FJR
+SEQ  1    DSLGWSNVDVLDRICEAYGFSQKIQLANHFDIASSSLSNRYTRGAISYDF   50          2FJR
+STR             HHHHHHHHHHHH    HHHHHHTTT  HHHHHHHHH   TTHHH               2FJR
+REM                                                                        2FJR
+REM                .         .         .         .         .               2FJR
+SEQ  51   AAHCALETGANLQWLLTGEGEAFVNNRESSDAKRIEGFTLSEEILKSDKQ  100          2FJR
+STR       HHHHHHHH   HHHHH TTTT  TTTTTTTTT EEEEEEEETTEEEEEEE               2FJR
+REM                                                                        2FJR
+REM                .         .         .         .         .               2FJR
+SEQ  101  LSVDAQFFTKPLTDGMAIRSEGKIYFVDKQASLSDGLWLVDIKGAISIRE  150          2FJR
+STR       EE  GGGTTTTTTTEEEEEETTEEEEEETTT    EEEEEEETTEEEEEE               2FJR
+REM                                                                        2FJR
+REM                .         .         .                                   2FJR
+SEQ  151  LTKLPGRKLHVAGGKVPFECGIDDIKTLGRVVGVYSEVN             189          2FJR
+STR       EEEETTTEEEEETTT  EEEETTTTEEEEEEEEEEEE                            2FJR
+REM                                                                        2FJR
+REM                                                                        2FJR
+REM                                                                        2FJR
+LOC  AlphaHelix   ASN    10 A      TYR     21 A                            2FJR
+LOC  AlphaHelix   LYS    26 A      PHE     33 A                            2FJR
+LOC  AlphaHelix   SER    37 A      THR     45 A                            2FJR
+LOC  AlphaHelix   TYR    51 A      THR     61 A                            2FJR
+LOC  AlphaHelix   LEU    65 A      THR     70 A                            2FJR
+LOC  AlphaHelix   ASN    10 B      TYR     21 B                            2FJR
+LOC  AlphaHelix   LYS    26 B      ASN     31 B                            2FJR
+LOC  AlphaHelix   SER    37 B      THR     45 B                            2FJR
+LOC  AlphaHelix   TYR    51 B      THR     61 B                            2FJR
+LOC  AlphaHelix   LEU    65 B      LEU     69 B                            2FJR
+LOC  310Helix     ALA   108 A      PHE    110 A                            2FJR
+LOC  310Helix     ALA   108 B      PHE    110 B                            2FJR
+LOC  Strand       ARG    87 A      SER     94 A                            2FJR
+LOC  Strand       ILE    97 A      SER    105 A                            2FJR
+LOC  Strand       GLY   118 A      SER    123 A                            2FJR
+LOC  Strand       LYS   126 A      ASP    131 A                            2FJR
+LOC  Strand       GLY   139 A      ILE    145 A                            2FJR
+LOC  Strand       ALA   148 A      LEU    157 A                            2FJR
+LOC  Strand       LYS   161 A      ALA    165 A                            2FJR
+LOC  Strand       PHE   171 A      GLY    174 A                            2FJR
+LOC  Strand       LYS   179 A      GLU    190 A                            2FJR
+LOC  Strand       ARG    87 B      SER     94 B                            2FJR
+LOC  Strand       ILE    97 B      SER    105 B                            2FJR
+LOC  Strand       GLY   118 B      SER    123 B                            2FJR
+LOC  Strand       LYS   126 B      ASP    131 B                            2FJR
+LOC  Strand       GLY   139 B      ILE    145 B                            2FJR
+LOC  Strand       ALA   148 B      LEU    157 B                            2FJR
+LOC  Strand       LYS   161 B      ALA    165 B                            2FJR
+LOC  Strand       PHE   171 B      GLY    174 B                            2FJR
+LOC  Strand       LYS   179 B      GLU    190 B                            2FJR
+LOC  TurnIV       SER     5 A      TRP      8 A                            2FJR
+LOC  TurnII       ASN    78 A      GLU     81 A                            2FJR
+LOC  TurnIV       ARG    80 A      SER     83 A                            2FJR
+LOC  TurnIV       ALA    85 A      ILE     88 A                            2FJR
+LOC  TurnIV       LEU    93 A      GLU     96 A                            2FJR
+LOC  TurnI'       SER    94 A      ILE     97 A                            2FJR
+LOC  TurnVIII     PHE   111 A      PRO    114 A                            2FJR
+LOC  TurnVIII     LEU   115 A      GLY    118 A                            2FJR
+LOC  TurnIV       ARG   122 A      GLY    125 A                            2FJR
+LOC  TurnI'       SER   123 A      LYS    126 A                            2FJR
+LOC  TurnI        ASP   131 A      ALA    134 A                            2FJR
+LOC  TurnIV       ASP   144 A      GLY    147 A                            2FJR
+LOC  TurnI'       ILE   145 A      ALA    148 A                            2FJR
+LOC  TurnII       LEU   157 A      ARG    160 A                            2FJR
+LOC  TurnIV       PRO   158 A      LYS    161 A                            2FJR
+LOC  TurnVIII     GLY   167 A      PRO    170 A                            2FJR
+LOC  TurnI        GLY   174 A      ASP    177 A                            2FJR
+LOC  TurnIV       ILE   175 A      ILE    178 A                            2FJR
+LOC  TurnI        ASN    31 B      ASP     34 B                            2FJR
+LOC  TurnIV       GLY    71 B      GLU     74 B                            2FJR
+LOC  TurnIV       VAL    77 B      ARG     80 B                            2FJR
+LOC  TurnIV       ASN    78 B      GLU     81 B                            2FJR
+LOC  TurnIV       GLU    81 B      ASP     84 B                            2FJR
+LOC  TurnIV       SER    82 B      ALA     85 B                            2FJR
+LOC  TurnIV       LEU    93 B      GLU     96 B                            2FJR
+LOC  TurnI'       SER    94 B      ILE     97 B                            2FJR
+LOC  TurnVIII     PHE   111 B      PRO    114 B                            2FJR
+LOC  TurnIV       LEU   115 B      GLY    118 B                            2FJR
+LOC  TurnI'       SER   123 B      LYS    126 B                            2FJR
+LOC  TurnI        ASP   131 B      ALA    134 B                            2FJR
+LOC  TurnIV       ASP   144 B      GLY    147 B                            2FJR
+LOC  TurnI'       ILE   145 B      ALA    148 B                            2FJR
+LOC  TurnII       LEU   157 B      ARG    160 B                            2FJR
+LOC  TurnIV       PRO   158 B      LYS    161 B                            2FJR
+LOC  TurnI        GLY   174 B      ASP    177 B                            2FJR
+LOC  TurnI        ILE   175 B      ILE    178 B                            2FJR
+LOC  GammaInv     ILE    49 B      TYR     51 B                            2FJR
+LOC  GammaClassic  GLY   166 B      LYS    168 B                           2FJR
+REM                                                                        2FJR
+REM  --------------- Detailed secondary structure assignment-------------  2FJR
+REM                                                                        2FJR
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      2FJR
+ASG  ASP A    4    1    C          Coil    360.00   -133.36     178.4      2FJR
+ASG  SER A    5    2    T          Turn    -63.64     73.11      56.4      2FJR
+ASG  LEU A    6    3    T          Turn    -27.87    164.38     161.4      2FJR
+ASG  GLY A    7    4    T          Turn     94.25    -52.67      79.2      2FJR
+ASG  TRP A    8    5    T          Turn    -52.78    122.20      92.4      2FJR
+ASG  SER A    9    6    C          Coil    -93.05    114.08      33.6      2FJR
+ASG  ASN A   10    7    H    AlphaHelix    -60.30    -36.66      19.9      2FJR
+ASG  VAL A   11    8    H    AlphaHelix    -61.87    -47.74      53.3      2FJR
+ASG  ASP A   12    9    H    AlphaHelix    -64.76    -37.40      77.3      2FJR
+ASG  VAL A   13   10    H    AlphaHelix    -61.60    -51.44       0.0      2FJR
+ASG  LEU A   14   11    H    AlphaHelix    -59.13    -42.03       0.2      2FJR
+ASG  ASP A   15   12    H    AlphaHelix    -66.50    -36.78      61.6      2FJR
+ASG  ARG A   16   13    H    AlphaHelix    -70.50    -30.70      33.7      2FJR
+ASG  ILE A   17   14    H    AlphaHelix    -65.19    -40.90       0.0      2FJR
+ASG  CYS A   18   15    H    AlphaHelix    -62.64    -40.75       8.8      2FJR
+ASG  GLU A   19   16    H    AlphaHelix    -60.62    -43.34     128.8      2FJR
+ASG  ALA A   20   17    H    AlphaHelix    -61.14    -38.80       1.1      2FJR
+ASG  TYR A   21   18    H    AlphaHelix    -83.34    -10.96       9.1      2FJR
+ASG  GLY A   22   19    C          Coil     82.33     21.42      55.5      2FJR
+ASG  PHE A   23   20    C          Coil    -83.60    129.08      20.0      2FJR
+ASG  SER A   24   21    C          Coil    -91.04    -19.90     109.0      2FJR
+ASG  GLN A   25   22    C          Coil   -127.93    142.81     124.9      2FJR
+ASG  LYS A   26   23    H    AlphaHelix    -53.58    -34.23     109.4      2FJR
+ASG  ILE A   27   24    H    AlphaHelix    -60.33    -29.91      71.0      2FJR
+ASG  GLN A   28   25    H    AlphaHelix    -65.23    -36.08      67.8      2FJR
+ASG  LEU A   29   26    H    AlphaHelix    -69.25    -44.36       0.0      2FJR
+ASG  ALA A   30   27    H    AlphaHelix    -56.24    -45.77       0.2      2FJR
+ASG  ASN A   31   28    H    AlphaHelix    -61.89    -45.66      76.8      2FJR
+ASG  HIS A   32   29    H    AlphaHelix    -55.53    -40.98      19.4      2FJR
+ASG  PHE A   33   30    H    AlphaHelix    -97.49     17.21      37.8      2FJR
+ASG  ASP A   34   31    C          Coil     50.52     48.87     151.8      2FJR
+ASG  ILE A   35   32    C          Coil   -125.92    160.92      43.5      2FJR
+ASG  ALA A   36   33    C          Coil    -72.95    152.34      55.5      2FJR
+ASG  SER A   37   34    H    AlphaHelix    -55.61    -39.55      61.0      2FJR
+ASG  SER A   38   35    H    AlphaHelix    -64.49    -32.71      87.0      2FJR
+ASG  SER A   39   36    H    AlphaHelix    -67.52    -37.21      55.2      2FJR
+ASG  LEU A   40   37    H    AlphaHelix    -68.32    -40.74       3.6      2FJR
+ASG  SER A   41   38    H    AlphaHelix    -58.02    -40.54      61.4      2FJR
+ASG  ASN A   42   39    H    AlphaHelix    -62.91    -36.67      93.7      2FJR
+ASG  ARG A   43   40    H    AlphaHelix    -63.60    -34.46      36.1      2FJR
+ASG  TYR A   44   41    H    AlphaHelix    -75.07    -37.57      21.6      2FJR
+ASG  THR A   45   42    H    AlphaHelix    -71.78    -40.71     122.7      2FJR
+ASG  ARG A   46   43    C          Coil    -67.10    156.03      80.4      2FJR
+ASG  GLY A   47   44    C          Coil    -78.06    -30.07      63.1      2FJR
+ASG  ALA A   48   45    C          Coil    -65.08    132.15      60.6      2FJR
+ASG  ILE A   49   46    C          Coil    -67.10    143.27      20.8      2FJR
+ASG  SER A   50   47    C          Coil    -87.19     73.10       0.5      2FJR
+ASG  TYR A   51   48    H    AlphaHelix    -60.94    -32.79     100.1      2FJR
+ASG  ASP A   52   49    H    AlphaHelix    -61.54    -46.03      69.1      2FJR
+ASG  PHE A   53   50    H    AlphaHelix    -68.41    -38.00       8.2      2FJR
+ASG  ALA A   54   51    H    AlphaHelix    -64.28    -43.41       0.6      2FJR
+ASG  ALA A   55   52    H    AlphaHelix    -62.62    -47.76      39.9      2FJR
+ASG  HIS A   56   53    H    AlphaHelix    -67.61    -31.60      91.2      2FJR
+ASG  CYS A   57   54    H    AlphaHelix    -65.15    -44.61       0.0      2FJR
+ASG  ALA A   58   55    H    AlphaHelix    -54.49    -56.82      15.0      2FJR
+ASG  LEU A   59   56    H    AlphaHelix    -57.11    -44.52     112.9      2FJR
+ASG  GLU A   60   57    H    AlphaHelix    -77.58    -36.05      91.0      2FJR
+ASG  THR A   61   58    H    AlphaHelix   -106.24    -14.07      12.7      2FJR
+ASG  GLY A   62   59    C          Coil     79.85      7.89      30.1      2FJR
+ASG  ALA A   63   60    C          Coil    -62.82    147.24       5.4      2FJR
+ASG  ASN A   64   61    C          Coil    -67.11    118.07      77.8      2FJR
+ASG  LEU A   65   62    H    AlphaHelix    -53.95    -51.99      83.3      2FJR
+ASG  GLN A   66   63    H    AlphaHelix    -50.35    -43.93      85.4      2FJR
+ASG  TRP A   67   64    H    AlphaHelix    -66.99    -42.28      16.0      2FJR
+ASG  LEU A   68   65    H    AlphaHelix    -57.94    -46.39       0.0      2FJR
+ASG  LEU A   69   66    H    AlphaHelix    -77.70    -33.98      13.4      2FJR
+ASG  THR A   70   67    H    AlphaHelix   -115.38    -23.15      29.3      2FJR
+ASG  GLY A   71   68    C          Coil     84.63      0.87      27.7      2FJR
+ASG  GLU A   72   69    C          Coil    -77.46    140.45     121.5      2FJR
+ASG  GLY A   73   70    C          Coil     83.29   -135.80      76.7      2FJR
+ASG  GLU A   74   71    C          Coil   -146.50    150.97     140.8      2FJR
+ASG  ALA A   75   72    C          Coil    -48.79    -66.16      12.5      2FJR
+ASG  PHE A   76   73    C          Coil   -124.52    155.56      19.1      2FJR
+ASG  VAL A   77   74    C          Coil    -93.85    -66.90     116.9      2FJR
+ASG  ASN A   78   75    T          Turn   -142.43    -52.84     119.3      2FJR
+ASG  ASN A   79   76    T          Turn    -83.95    147.55     112.4      2FJR
+ASG  ARG A   80   77    T          Turn     56.67     17.48      57.4      2FJR
+ASG  GLU A   81   78    T          Turn    -55.83    111.57      99.1      2FJR
+ASG  SER A   82   79    T          Turn     70.04    -57.66      89.6      2FJR
+ASG  SER A   83   80    T          Turn     60.39   -132.03      23.5      2FJR
+ASG  ASP A   84   81    C          Coil    178.89    -76.56      30.5      2FJR
+ASG  ALA A   85   82    T          Turn   -148.21    137.64       9.3      2FJR
+ASG  LYS A   86   83    T          Turn   -120.49    -48.49      34.3      2FJR
+ASG  ARG A   87   84    E        Strand   -120.19    124.28     135.3      2FJR
+ASG  ILE A   88   85    E        Strand   -120.27    135.11       5.3      2FJR
+ASG  GLU A   89   86    E        Strand    -56.77    134.81     107.1      2FJR
+ASG  GLY A   90   87    E        Strand   -111.31    153.67       3.0      2FJR
+ASG  PHE A   91   88    E        Strand   -148.58    167.25      30.0      2FJR
+ASG  THR A   92   89    E        Strand   -124.26    140.73      44.3      2FJR
+ASG  LEU A   93   90    E        Strand   -121.10    118.09      12.5      2FJR
+ASG  SER A   94   91    E        Strand   -151.85    136.68      53.8      2FJR
+ASG  GLU A   95   92    T          Turn     56.96     36.66     160.7      2FJR
+ASG  GLU A   96   93    T          Turn     61.84     19.22     108.4      2FJR
+ASG  ILE A   97   94    E        Strand   -116.75    128.96      83.9      2FJR
+ASG  LEU A   98   95    E        Strand   -105.01    123.46      44.5      2FJR
+ASG  LYS A   99   96    E        Strand   -122.02    140.38     101.0      2FJR
+ASG  SER A  100   97    E        Strand    -62.23    147.48      99.0      2FJR
+ASG  ASP A  101   98    E        Strand   -140.84   -170.02      61.2      2FJR
+ASG  LYS A  102   99    E        Strand    -75.79    152.79     113.4      2FJR
+ASG  GLN A  103  100    E        Strand    -68.77    160.65      55.0      2FJR
+ASG  LEU A  104  101    E        Strand   -118.97    133.62       3.8      2FJR
+ASG  SER A  105  102    E        Strand    -91.87    126.82       9.2      2FJR
+ASG  VAL A  106  103    C          Coil   -142.08    154.28       0.2      2FJR
+ASG  ASP A  107  104    C          Coil    -78.93    140.55      19.4      2FJR
+ASG  ALA A  108  105    G      310Helix    -61.84    -17.68      15.7      2FJR
+ASG  GLN A  109  106    G      310Helix    -67.63    -14.26      64.4      2FJR
+ASG  PHE A  110  107    G      310Helix    -67.68    -25.38       0.2      2FJR
+ASG  PHE A  111  108    T          Turn   -120.31    125.28       8.4      2FJR
+ASG  THR A  112  109    T          Turn    -67.49    -37.48     107.3      2FJR
+ASG  LYS A  113  110    T          Turn   -103.90    140.79     107.3      2FJR
+ASG  PRO A  114  111    T          Turn    -51.80    145.70      84.0      2FJR
+ASG  LEU A  115  112    T          Turn   -122.30     84.53       5.8      2FJR
+ASG  THR A  116  113    T          Turn    -83.67    -29.87      41.5      2FJR
+ASG  ASP A  117  114    T          Turn   -126.32     76.10      26.5      2FJR
+ASG  GLY A  118  115    E        Strand   -107.42    169.03      13.2      2FJR
+ASG  MET A  119  116    E        Strand   -138.78    143.49      12.4      2FJR
+ASG  ALA A  120  117    E        Strand   -117.39    107.62       1.5      2FJR
+ASG  ILE A  121  118    E        Strand   -111.09    119.55       0.0      2FJR
+ASG  ARG A  122  119    E        Strand    -85.17    120.79      68.1      2FJR
+ASG  SER A  123  120    E        Strand   -149.34    127.33      12.7      2FJR
+ASG  GLU A  124  121    T          Turn     50.49     46.64     168.4      2FJR
+ASG  GLY A  125  122    T          Turn     69.63     15.42      73.5      2FJR
+ASG  LYS A  126  123    E        Strand   -129.40    165.17      90.0      2FJR
+ASG  ILE A  127  124    E        Strand   -121.49    116.54       7.4      2FJR
+ASG  TYR A  128  125    E        Strand    -98.96    128.58      20.4      2FJR
+ASG  PHE A  129  126    E        Strand    -98.87    119.28       0.2      2FJR
+ASG  VAL A  130  127    E        Strand   -114.58    135.25       0.0      2FJR
+ASG  ASP A  131  128    E        Strand   -101.00    104.75      29.3      2FJR
+ASG  LYS A  132  129    T          Turn    -63.30    -21.78      96.1      2FJR
+ASG  GLN A  133  130    T          Turn    -96.29      1.16      74.6      2FJR
+ASG  ALA A  134  131    T          Turn    -53.11    139.83      20.7      2FJR
+ASG  SER A  135  132    C          Coil    -73.05    149.47      95.5      2FJR
+ASG  LEU A  136  133    C          Coil    -64.52    128.89      54.0      2FJR
+ASG  SER A  137  134    C          Coil   -166.09    161.60      39.7      2FJR
+ASG  ASP A  138  135    C          Coil    -56.06    145.03      89.2      2FJR
+ASG  GLY A  139  136    E        Strand    154.09   -170.53      11.3      2FJR
+ASG  LEU A  140  137    E        Strand    -93.78    125.17      39.0      2FJR
+ASG  TRP A  141  138    E        Strand   -127.98    151.10       3.2      2FJR
+ASG  LEU A  142  139    E        Strand    -88.58    124.66       0.0      2FJR
+ASG  VAL A  143  140    E        Strand   -133.62    162.21       0.0      2FJR
+ASG  ASP A  144  141    E        Strand   -122.84    115.50      41.8      2FJR
+ASG  ILE A  145  142    E        Strand   -112.68    102.62      30.9      2FJR
+ASG  LYS A  146  143    T          Turn     57.68     27.29     210.0      2FJR
+ASG  GLY A  147  144    T          Turn    108.04    -24.36      51.3      2FJR
+ASG  ALA A  148  145    E        Strand    -85.54    134.53      29.8      2FJR
+ASG  ILE A  149  146    E        Strand   -103.83    135.67      24.3      2FJR
+ASG  SER A  150  147    E        Strand   -153.91    174.55      17.3      2FJR
+ASG  ILE A  151  148    E        Strand   -114.61    121.70      31.2      2FJR
+ASG  ARG A  152  149    E        Strand   -137.35    152.51      36.3      2FJR
+ASG  GLU A  153  150    E        Strand    -82.20    125.25      80.0      2FJR
+ASG  LEU A  154  151    E        Strand   -110.53    143.04       1.4      2FJR
+ASG  THR A  155  152    E        Strand   -131.94    123.24      49.3      2FJR
+ASG  LYS A  156  153    E        Strand    -70.07    136.00     112.9      2FJR
+ASG  LEU A  157  154    E        Strand   -120.06    154.44      44.3      2FJR
+ASG  PRO A  158  155    T          Turn    -56.34    150.25     119.7      2FJR
+ASG  GLY A  159  156    T          Turn     83.38     22.51      45.7      2FJR
+ASG  ARG A  160  157    T          Turn     61.01     47.76     189.2      2FJR
+ASG  LYS A  161  158    E        Strand   -121.02    171.32      86.3      2FJR
+ASG  LEU A  162  159    E        Strand   -138.26    145.05       1.8      2FJR
+ASG  HIS A  163  160    E        Strand   -103.64    127.56      50.7      2FJR
+ASG  VAL A  164  161    E        Strand   -115.09    117.39       0.0      2FJR
+ASG  ALA A  165  162    E        Strand   -125.88    158.14      25.7      2FJR
+ASG  GLY A  166  163    C          Coil    125.32    -29.67      66.1      2FJR
+ASG  GLY A  167  164    T          Turn    -82.59   -165.56      30.9      2FJR
+ASG  LYS A  168  165    T          Turn    -57.18    -41.85     215.4      2FJR
+ASG  VAL A  169  166    T          Turn   -136.93    155.40     106.7      2FJR
+ASG  PRO A  170  167    T          Turn    -90.22    167.67      74.9      2FJR
+ASG  PHE A  171  168    E        Strand   -152.27    172.21      68.3      2FJR
+ASG  GLU A  172  169    E        Strand   -129.40    149.76     103.2      2FJR
+ASG  CYS A  173  170    E        Strand   -160.48    178.01      13.3      2FJR
+ASG  GLY A  174  171    E        Strand    -89.24    167.05      10.6      2FJR
+ASG  ILE A  175  172    T          Turn    -68.22    -10.44      80.4      2FJR
+ASG  ASP A  176  173    T          Turn    -97.33      1.61     132.9      2FJR
+ASG  ASP A  177  174    T          Turn    -93.83    -13.72      93.5      2FJR
+ASG  ILE A  178  175    T          Turn   -141.49    161.93      18.2      2FJR
+ASG  LYS A  179  176    E        Strand   -108.76    127.96     133.0      2FJR
+ASG  THR A  180  177    E        Strand    -93.25    124.64      52.7      2FJR
+ASG  LEU A  181  178    E        Strand    -92.37    -27.99      42.6      2FJR
+ASG  GLY A  182  179    E        Strand    167.69    159.06       0.6      2FJR
+ASG  ARG A  183  180    E        Strand    -99.73    135.80      24.3      2FJR
+ASG  VAL A  184  181    E        Strand    -71.18    122.50       0.0      2FJR
+ASG  VAL A  185  182    E        Strand   -109.22     -7.63      18.7      2FJR
+ASG  GLY A  186  183    E        Strand   -168.31    152.71       0.0      2FJR
+ASG  VAL A  187  184    E        Strand   -138.83    136.06      22.6      2FJR
+ASG  TYR A  188  185    E        Strand   -116.50    139.15       4.4      2FJR
+ASG  SER A  189  186    E        Strand   -142.49    135.30      33.7      2FJR
+ASG  GLU A  190  187    E        Strand    -76.91    141.28      56.9      2FJR
+ASG  VAL A  191  188    C          Coil   -111.17     66.45      48.4      2FJR
+ASG  ASN A  192  189    C          Coil    -62.95    360.00     187.8      2FJR
+ASG  ASP B    4    1    C          Coil    360.00     86.74     181.5      2FJR
+ASG  SER B    5    2    C          Coil    173.93     51.42     118.6      2FJR
+ASG  LEU B    6    3    C          Coil    -87.04     12.94     104.7      2FJR
+ASG  GLY B    7    4    C          Coil     71.51     47.14      73.1      2FJR
+ASG  TRP B    8    5    C          Coil    -97.18    154.27      85.3      2FJR
+ASG  SER B    9    6    C          Coil    -92.23    121.91      45.2      2FJR
+ASG  ASN B   10    7    H    AlphaHelix    -63.87    -53.00      18.6      2FJR
+ASG  VAL B   11    8    H    AlphaHelix    -57.15    -37.54      48.7      2FJR
+ASG  ASP B   12    9    H    AlphaHelix    -62.00    -48.20      86.6      2FJR
+ASG  VAL B   13   10    H    AlphaHelix    -64.16    -40.89       0.8      2FJR
+ASG  LEU B   14   11    H    AlphaHelix    -63.18    -32.17       1.0      2FJR
+ASG  ASP B   15   12    H    AlphaHelix    -84.23    -47.86      71.6      2FJR
+ASG  ARG B   16   13    H    AlphaHelix    -58.60    -18.78      39.9      2FJR
+ASG  ILE B   17   14    H    AlphaHelix    -79.67    -35.02       0.0      2FJR
+ASG  CYS B   18   15    H    AlphaHelix    -65.86    -44.34      13.2      2FJR
+ASG  GLU B   19   16    H    AlphaHelix    -57.80    -43.67      89.3      2FJR
+ASG  ALA B   20   17    H    AlphaHelix    -53.06    -65.58       0.0      2FJR
+ASG  TYR B   21   18    H    AlphaHelix    -55.11    -45.14      15.1      2FJR
+ASG  GLY B   22   19    C          Coil    109.91     39.61      35.0      2FJR
+ASG  PHE B   23   20    C          Coil   -101.21    167.03      29.4      2FJR
+ASG  SER B   24   21    C          Coil   -128.80    -25.15     122.2      2FJR
+ASG  GLN B   25   22    C          Coil   -111.06    147.61     108.4      2FJR
+ASG  LYS B   26   23    H    AlphaHelix    -80.07     -3.54     114.9      2FJR
+ASG  ILE B   27   24    H    AlphaHelix    -86.84    -12.28      77.1      2FJR
+ASG  GLN B   28   25    H    AlphaHelix    -79.25     20.84      37.4      2FJR
+ASG  LEU B   29   26    H    AlphaHelix   -136.37    -50.30       1.6      2FJR
+ASG  ALA B   30   27    H    AlphaHelix    -48.68    -56.61       0.8      2FJR
+ASG  ASN B   31   28    H    AlphaHelix    -68.10    -35.37      98.1      2FJR
+ASG  HIS B   32   29    T          Turn    -49.90    -52.95      34.9      2FJR
+ASG  PHE B   33   30    T          Turn    -92.26      9.53      39.9      2FJR
+ASG  ASP B   34   31    T          Turn     56.97     52.56     146.7      2FJR
+ASG  ILE B   35   32    C          Coil   -124.10    145.69      37.6      2FJR
+ASG  ALA B   36   33    C          Coil    -65.14    136.85      59.1      2FJR
+ASG  SER B   37   34    H    AlphaHelix    -44.60    -34.68      76.2      2FJR
+ASG  SER B   38   35    H    AlphaHelix    -65.27    -41.78      76.2      2FJR
+ASG  SER B   39   36    H    AlphaHelix    -61.17    -38.78      61.8      2FJR
+ASG  LEU B   40   37    H    AlphaHelix    -69.09    -38.43       7.0      2FJR
+ASG  SER B   41   38    H    AlphaHelix    -62.53    -35.63      58.7      2FJR
+ASG  ASN B   42   39    H    AlphaHelix    -56.77    -41.36     105.6      2FJR
+ASG  ARG B   43   40    H    AlphaHelix    -64.34    -31.47      44.7      2FJR
+ASG  TYR B   44   41    H    AlphaHelix    -76.94    -31.38      20.4      2FJR
+ASG  THR B   45   42    H    AlphaHelix    -72.24    -70.24     115.5      2FJR
+ASG  ARG B   46   43    C          Coil    -58.78    146.26      97.6      2FJR
+ASG  GLY B   47   44    C          Coil    -72.30    -12.53      57.4      2FJR
+ASG  ALA B   48   45    C          Coil    -63.57    116.00      52.0      2FJR
+ASG  ILE B   49   46    T          Turn    -60.74    137.07      23.5      2FJR
+ASG  SER B   50   47    T          Turn    -82.47     75.62       1.7      2FJR
+ASG  TYR B   51   48    H    AlphaHelix    -63.58    -29.69      94.0      2FJR
+ASG  ASP B   52   49    H    AlphaHelix    -64.06    -38.85      69.8      2FJR
+ASG  PHE B   53   50    H    AlphaHelix    -75.28    -37.31       6.6      2FJR
+ASG  ALA B   54   51    H    AlphaHelix    -62.91    -39.86       0.4      2FJR
+ASG  ALA B   55   52    H    AlphaHelix    -69.31    -50.90      43.9      2FJR
+ASG  HIS B   56   53    H    AlphaHelix    -63.82    -29.71      92.6      2FJR
+ASG  CYS B   57   54    H    AlphaHelix    -70.37    -44.17       0.0      2FJR
+ASG  ALA B   58   55    H    AlphaHelix    -61.42    -40.64      19.8      2FJR
+ASG  LEU B   59   56    H    AlphaHelix    -74.24    -49.91     135.5      2FJR
+ASG  GLU B   60   57    H    AlphaHelix    -67.69    -36.93      81.6      2FJR
+ASG  THR B   61   58    H    AlphaHelix   -107.12    -10.83       6.3      2FJR
+ASG  GLY B   62   59    C          Coil     80.22     -2.42      56.7      2FJR
+ASG  ALA B   63   60    C          Coil    -59.80    150.09       3.7      2FJR
+ASG  ASN B   64   61    C          Coil    -67.25    133.65      63.5      2FJR
+ASG  LEU B   65   62    H    AlphaHelix    -72.01    -43.20      83.2      2FJR
+ASG  GLN B   66   63    H    AlphaHelix    -51.88    -46.84     123.0      2FJR
+ASG  TRP B   67   64    H    AlphaHelix    -67.37    -45.23       3.8      2FJR
+ASG  LEU B   68   65    H    AlphaHelix    -55.54    -31.48       0.0      2FJR
+ASG  LEU B   69   66    H    AlphaHelix    -94.36    -27.35      21.4      2FJR
+ASG  THR B   70   67    C          Coil   -145.79   -103.84      48.8      2FJR
+ASG  GLY B   71   68    T          Turn     52.44   -154.87      32.4      2FJR
+ASG  GLU B   72   69    T          Turn   -163.04     -8.80     177.5      2FJR
+ASG  GLY B   73   70    T          Turn    156.92     29.79      51.1      2FJR
+ASG  GLU B   74   71    T          Turn   -100.05     40.75      84.4      2FJR
+ASG  ALA B   75   72    C          Coil    -84.37    -97.30      25.6      2FJR
+ASG  PHE B   76   73    C          Coil   -148.98   -124.51      60.7      2FJR
+ASG  VAL B   77   74    T          Turn   -149.97     99.20      63.9      2FJR
+ASG  ASN B   78   75    T          Turn   -109.25    -23.50      44.3      2FJR
+ASG  ASN B   79   76    T          Turn    -46.70    -33.02     132.8      2FJR
+ASG  ARG B   80   77    T          Turn   -166.46   -143.56     186.7      2FJR
+ASG  GLU B   81   78    T          Turn    -84.38     95.09      90.3      2FJR
+ASG  SER B   82   79    T          Turn    -41.13    -68.11      50.6      2FJR
+ASG  SER B   83   80    T          Turn   -132.97     20.78      64.5      2FJR
+ASG  ASP B   84   81    T          Turn    105.21    -23.79      32.1      2FJR
+ASG  ALA B   85   82    T          Turn    -22.18    -84.48      23.7      2FJR
+ASG  LYS B   86   83    C          Coil     67.17    107.39      32.6      2FJR
+ASG  ARG B   87   84    E        Strand    -94.31    141.85      56.3      2FJR
+ASG  ILE B   88   85    E        Strand   -134.21    133.38       6.2      2FJR
+ASG  GLU B   89   86    E        Strand    -62.01    135.59      47.7      2FJR
+ASG  GLY B   90   87    E        Strand   -108.05    157.58       0.4      2FJR
+ASG  PHE B   91   88    E        Strand   -151.64    168.32      25.7      2FJR
+ASG  THR B   92   89    E        Strand   -127.23    144.94      32.9      2FJR
+ASG  LEU B   93   90    E        Strand   -122.94    116.81      15.6      2FJR
+ASG  SER B   94   91    E        Strand   -146.82    136.40      58.5      2FJR
+ASG  GLU B   95   92    T          Turn     51.14     41.68     175.8      2FJR
+ASG  GLU B   96   93    T          Turn     65.33     16.25      93.6      2FJR
+ASG  ILE B   97   94    E        Strand   -117.38    129.38      94.5      2FJR
+ASG  LEU B   98   95    E        Strand    -96.87    122.42      49.1      2FJR
+ASG  LYS B   99   96    E        Strand   -118.79    140.41      99.4      2FJR
+ASG  SER B  100   97    E        Strand    -63.07    153.45      69.3      2FJR
+ASG  ASP B  101   98    E        Strand   -157.65   -171.87      69.3      2FJR
+ASG  LYS B  102   99    E        Strand    -59.14    145.84     149.0      2FJR
+ASG  GLN B  103  100    E        Strand    -62.31    155.06      39.3      2FJR
+ASG  LEU B  104  101    E        Strand   -122.40    130.07       0.8      2FJR
+ASG  SER B  105  102    E        Strand    -93.60    126.81      14.4      2FJR
+ASG  VAL B  106  103    C          Coil   -146.07    140.15       0.0      2FJR
+ASG  ASP B  107  104    C          Coil    -61.19    141.15       0.2      2FJR
+ASG  ALA B  108  105    G      310Helix    -63.84    -22.03      11.3      2FJR
+ASG  GLN B  109  106    G      310Helix    -67.13    -10.07      25.6      2FJR
+ASG  PHE B  110  107    G      310Helix    -74.50    -21.75       0.4      2FJR
+ASG  PHE B  111  108    T          Turn   -124.66    120.05      14.8      2FJR
+ASG  THR B  112  109    T          Turn    -69.08    -30.47     107.0      2FJR
+ASG  LYS B  113  110    T          Turn   -104.27    135.58     159.9      2FJR
+ASG  PRO B  114  111    T          Turn    -58.14    135.33      93.3      2FJR
+ASG  LEU B  115  112    T          Turn   -103.28     80.42      10.9      2FJR
+ASG  THR B  116  113    T          Turn    -72.64    -37.82     120.0      2FJR
+ASG  ASP B  117  114    T          Turn   -120.28     73.51      27.9      2FJR
+ASG  GLY B  118  115    E        Strand   -106.36    169.09      11.2      2FJR
+ASG  MET B  119  116    E        Strand   -138.87    143.58      10.0      2FJR
+ASG  ALA B  120  117    E        Strand   -118.94    110.68       0.2      2FJR
+ASG  ILE B  121  118    E        Strand   -112.51    120.81       0.2      2FJR
+ASG  ARG B  122  119    E        Strand    -83.49    122.23      47.3      2FJR
+ASG  SER B  123  120    E        Strand   -152.44    106.69      11.6      2FJR
+ASG  GLU B  124  121    T          Turn     47.68     70.45     181.6      2FJR
+ASG  GLY B  125  122    T          Turn     70.30      5.14      47.1      2FJR
+ASG  LYS B  126  123    E        Strand   -131.02    154.99      84.7      2FJR
+ASG  ILE B  127  124    E        Strand   -120.56    116.86      12.6      2FJR
+ASG  TYR B  128  125    E        Strand    -97.18    128.95      34.1      2FJR
+ASG  PHE B  129  126    E        Strand    -99.49    118.12       0.0      2FJR
+ASG  VAL B  130  127    E        Strand   -113.91    134.03       0.0      2FJR
+ASG  ASP B  131  128    E        Strand    -99.93    106.08      30.5      2FJR
+ASG  LYS B  132  129    T          Turn    -68.98    -16.11      65.2      2FJR
+ASG  GLN B  133  130    T          Turn    -96.47      1.36     122.8      2FJR
+ASG  ALA B  134  131    T          Turn    -56.85    137.32      21.0      2FJR
+ASG  SER B  135  132    C          Coil    -70.73    151.05      96.5      2FJR
+ASG  LEU B  136  133    C          Coil    -64.13    128.01      55.8      2FJR
+ASG  SER B  137  134    C          Coil   -159.38    166.53      38.5      2FJR
+ASG  ASP B  138  135    C          Coil    -64.91    148.22      88.0      2FJR
+ASG  GLY B  139  136    E        Strand    146.64   -171.06      14.7      2FJR
+ASG  LEU B  140  137    E        Strand    -89.54    133.05      51.7      2FJR
+ASG  TRP B  141  138    E        Strand   -135.72    150.23       3.4      2FJR
+ASG  LEU B  142  139    E        Strand    -87.63    125.54       0.0      2FJR
+ASG  VAL B  143  140    E        Strand   -132.48    167.22       0.0      2FJR
+ASG  ASP B  144  141    E        Strand   -127.68    114.42      39.6      2FJR
+ASG  ILE B  145  142    E        Strand   -118.35    104.97      36.5      2FJR
+ASG  LYS B  146  143    T          Turn     55.58     41.66     192.5      2FJR
+ASG  GLY B  147  144    T          Turn     85.08    -17.67      51.2      2FJR
+ASG  ALA B  148  145    E        Strand    -82.74    124.53      22.9      2FJR
+ASG  ILE B  149  146    E        Strand    -93.15    135.00      19.1      2FJR
+ASG  SER B  150  147    E        Strand   -156.64    173.47      10.5      2FJR
+ASG  ILE B  151  148    E        Strand   -111.41    123.79      24.0      2FJR
+ASG  ARG B  152  149    E        Strand   -135.98    149.11      21.9      2FJR
+ASG  GLU B  153  150    E        Strand    -83.88    127.09      80.4      2FJR
+ASG  LEU B  154  151    E        Strand   -112.34    142.93       0.6      2FJR
+ASG  THR B  155  152    E        Strand   -127.91    123.38      48.7      2FJR
+ASG  LYS B  156  153    E        Strand    -70.86    137.57     114.2      2FJR
+ASG  LEU B  157  154    E        Strand   -119.92    159.99      42.9      2FJR
+ASG  PRO B  158  155    T          Turn    -62.76    159.96     116.8      2FJR
+ASG  GLY B  159  156    T          Turn     74.86     28.66      45.9      2FJR
+ASG  ARG B  160  157    T          Turn     57.25     47.94     186.4      2FJR
+ASG  LYS B  161  158    E        Strand   -121.85    165.93      76.4      2FJR
+ASG  LEU B  162  159    E        Strand   -137.12    148.54       1.4      2FJR
+ASG  HIS B  163  160    E        Strand   -106.19    131.10      56.3      2FJR
+ASG  VAL B  164  161    E        Strand   -119.52    121.38       1.2      2FJR
+ASG  ALA B  165  162    E        Strand   -130.48    155.62      26.9      2FJR
+ASG  GLY B  166  163    T          Turn    111.73    149.23      38.2      2FJR
+ASG  GLY B  167  164    T          Turn     80.59    -68.11      71.5      2FJR
+ASG  LYS B  168  165    T          Turn   -125.67   -176.16     126.0      2FJR
+ASG  VAL B  169  166    C          Coil    -54.19    143.86     124.4      2FJR
+ASG  PRO B  170  167    C          Coil    -68.78    155.51      67.9      2FJR
+ASG  PHE B  171  168    E        Strand   -147.26    171.81      75.4      2FJR
+ASG  GLU B  172  169    E        Strand   -123.79    148.48     111.3      2FJR
+ASG  CYS B  173  170    E        Strand   -157.62    179.33      15.1      2FJR
+ASG  GLY B  174  171    E        Strand    -91.52    164.39       9.5      2FJR
+ASG  ILE B  175  172    T          Turn    -65.65    -13.38      81.3      2FJR
+ASG  ASP B  176  173    T          Turn    -88.21     -2.26     136.1      2FJR
+ASG  ASP B  177  174    T          Turn    -92.81    -18.89      85.7      2FJR
+ASG  ILE B  178  175    T          Turn   -139.29    157.20      18.5      2FJR
+ASG  LYS B  179  176    E        Strand   -101.49    125.13     122.8      2FJR
+ASG  THR B  180  177    E        Strand    -96.33    120.45      57.0      2FJR
+ASG  LEU B  181  178    E        Strand    -89.10    -32.24      48.7      2FJR
+ASG  GLY B  182  179    E        Strand    172.27    157.95       0.4      2FJR
+ASG  ARG B  183  180    E        Strand    -95.60    136.39      49.1      2FJR
+ASG  VAL B  184  181    E        Strand    -70.61    119.60       0.8      2FJR
+ASG  VAL B  185  182    E        Strand   -104.62    -11.89      17.6      2FJR
+ASG  GLY B  186  183    E        Strand   -163.49    156.38       0.0      2FJR
+ASG  VAL B  187  184    E        Strand   -140.66    133.30      16.2      2FJR
+ASG  TYR B  188  185    E        Strand   -111.65    128.31       1.6      2FJR
+ASG  SER B  189  186    E        Strand   -123.49    131.21      38.3      2FJR
+ASG  GLU B  190  187    E        Strand    -79.35    145.70      37.0      2FJR
+ASG  VAL B  191  188    C          Coil   -114.24     77.01      39.7      2FJR
+ASG  ASN B  192  189    C          Coil    -67.38    360.00     141.6      2FJR
